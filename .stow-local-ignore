@@ -1,0 +1,7 @@
+# Git
+\.git
+\.gitignore
+
+# Dotfile repo instructions and licence
+^/README.*
+^/LICENSE.*
