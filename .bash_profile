@@ -7,18 +7,6 @@ alias be="bundle exec"
 
 # Git
 alias g="git"
-alias ga="git add"
-alias gaa="git add --all"
-alias gco="git checkout"
-alias gcom="git checkout master"
-alias gcmm="git commit  "
-alias gd="git diff --color | diff-so-fancy  | less --tabs=4 -RFX"
-alias gg="git grep"
-alias gl="git log --pretty=format:'%Cred%h%Creset %C(bold blue)<%an>%Creset @ %Cgreen%cr%Creset: %s' --abbrev-commit"
-alias gpom="git pull origin master"
-alias gsh="git show --name-only"
-alias gst="git status -sb"
-alias rug="git stash"
 
 # System
 alias cc="clear"
@@ -31,5 +19,21 @@ alias ...="cd ../.."
 alias dot="cd ~/dotfiles"
 alias dev="cd ~/dev"
 
-# ALIASES - WORK
-# alias logs="tail -f path/to/dir"
+###################
+# Additonal Configs
+###################
+
+# Bash aliases
+if [ -f ~/.bash/bash_aliases ]; then
+  . ~/.bash/bash_aliases
+fi
+
+if [ -f ~/.bash/sage_aliases ]; then
+  . ~/.bash/sage_aliases
+fi
+
+if [ -d ~/.bash/sage ]; then
+  . ~/.bash/sage_aliases
+  . ~/.bash/sage_env
+  . ~/.bash/docker
+fi
