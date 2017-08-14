@@ -1,7 +1,10 @@
+# Files specified as private
+^/*_private*
+
 # Git
 \.git
 \.gitignore
 
-# Dotfile repo instructions and licence
+# Dotfile repo instructions and license
 ^/README.*
 ^/LICENSE.*
