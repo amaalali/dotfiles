@@ -1,3 +1,6 @@
+[include]
+  gitpath = /.my_git_info/info
+
 [alias]
   a = add
   aa = add --all
@@ -11,3 +14,31 @@
   sh = show --name-only
   st = status -sb
   rug = stash
+
+[color]
+  ui = true
+
+[color "branch"]
+  current = yellow reverse
+  local = yellow
+  remote = green
+
+[color "diff"]
+  meta = yellow
+  frag = magenta
+  old = red
+  new = green
+
+[color "status"]
+  added = yellow
+  changed = red
+  untracked = cyan bold
+
+[color "diff-highlight"]
+  oldNormal = red bold
+  oldHighlight = red bold 52
+  newNormal = green bold
+  newHighlight = green bold 22
+
+[push]
+  default = simple
