@@ -5,6 +5,11 @@ export EDITOR='vim'
 # Additonal Configs
 ###################
 
+# Powerline
+if [ -f ~/.bash/powerline ]; then
+  . ~/.bash/powerline
+fi
+
 # Bash aliases
 if [ -f ~/.bash/bash_aliases ]; then
   . ~/.bash/bash_aliases
