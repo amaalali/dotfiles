@@ -6,8 +6,8 @@
   aa = add --all
   co = checkout
   com = checkout master
-  cmm = commit
-  d = diff --color | diff-so-fancy  | less --tabs=4 -RFX
+  cmm = commit --verbose
+  d = 'diff --color | diff-so-fancy | less --tabs=4 -RFX'
   g = grep
   l = log --pretty=format:'%Cred%h%Creset @ %Cgreen%cr%Creset: %f %C(bold)%d%Creset %C(bold blue)<%an>%Creset' --abbrev-commit
   pom = pull origin master
@@ -42,3 +42,11 @@
 
 [push]
   default = simple
+[core]
+  excludesfile = /Users/amaal.ali/.gitignore_global
+[difftool "sourcetree"]
+  cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+  path = 
+[mergetool "sourcetree"]
+  cmd = /Users/amaal.ali/Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+  trustExitCode = true
