@@ -7,6 +7,7 @@ filetype off                  " To force plugins to load correctly required
 set t_Co=256
 syntax on                         " Turn on syntax highlighting
 set ruler                         " Display cursor position in buffer
+
 " set cursorline
 set showcmd                       " Display incomplete commands.
 set showmode                      " Display the mode you're in.
