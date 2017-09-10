@@ -1,0 +1,5 @@
+function stash_and_checkout() {
+    git stash
+    git checkout $1
+    git stash pop stash@{0}
+}

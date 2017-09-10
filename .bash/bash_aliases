@@ -15,6 +15,7 @@ alias gl="git log --pretty=format:'%Cred%h%Creset @ %Cgreen%cr%Creset: %s %C(bol
 alias gpom="git pull origin master"
 alias gsh="git show --name-only"
 alias gst="git status -sb"
+alias gsco="stash_and_checkout"
 alias rug="git stash"
 
 
