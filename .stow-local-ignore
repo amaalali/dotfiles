@@ -8,3 +8,6 @@
 # Dotfile repo instructions and license
 ^/README.*
 ^/LICENSE.*
+
+# Temp files
+*.swp
