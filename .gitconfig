@@ -1,5 +1,5 @@
 [include]
-  path = .my_git_info/info
+  path = .my_git_info
 
 [alias]
   a = add

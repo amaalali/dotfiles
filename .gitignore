@@ -1,3 +1,4 @@
-.my_git_info/
+.my_git_info
+.my_git_info_old
 .sage/
 .DS_Store
