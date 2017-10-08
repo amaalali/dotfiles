@@ -9,11 +9,12 @@
   cmm = commit --verbose
   d = 'diff --color | diff-so-fancy | less --tabs=4 -RFX'
   g = grep
-  l = log --pretty=format:'%Cred%h%Creset @ %Cgreen%cr%Creset: %f %C(bold)%d%Creset %C(bold blue)<%an>%Creset' --abbrev-commit
+  l = log --pretty=format:'%Cred%h%Creset @ %Cgreen%cr%Creset: %s %C(bold)%d%Creset %C(bold blue)<%an>%Creset' --abbrev-commit
   pom = pull origin master
   sh = show --name-only
   st = status -sb
   rug = stash
+	fpush = push
 
 [color]
   ui = true
