@@ -32,10 +32,10 @@ set ruler                         " Display cursor position in buffer
 set showcmd                       " Display incomplete commands.
 set showmode                      " Display the mode you're in.
 set incsearch                     " Show match when typing
-set hlsearch                      " Highlight all search matches
+" set hlsearch                      " Highlight all search matches
 set laststatus=2                  " Always show status bar
 set lazyredraw                    " Dont redraw between macros
-set timeoutlen=500                " Time to wait for second key press
+set timeoutlen=750                " Time to wait for second key press
 
 " Tab settingss
 set tabstop=2                    " Global tab width.
