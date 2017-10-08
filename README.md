@@ -34,8 +34,11 @@ dotfiles/
 └── powerline-shell.py
 ```
 
-# Todo
-- [ ] Make vimrc modular
-
 # Vim
 - Using vim-plug to manage plugins
+### Todo
+- [ ] Make vimrc modular
+
+# Additional Apps
+- `mycli` - a MySQL command line application
+- `tig` - git command line tool
