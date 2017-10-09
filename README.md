@@ -35,10 +35,18 @@ dotfiles/
 ```
 
 # Vim
-- Using vim-plug to manage plugins
+- Using [Vim-Plug](https://github.com/junegunn/vim-plug) to manage plugins 
+Install using `curl -fLo ~/.vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim`
+
 ### Todo
 - [ ] Make vimrc modular
 
-# Additional Apps
+# Additional Apps and Utilities
+- `rbenv` - to manage ruby versions
+  - install via homebrew
 - `mycli` - a MySQL command line application
+  - install via homebrew
 - `tig` - git command line tool
+  - install via homebrew
+- `the_silver_searcher` - ag, faster than ack
+  - install via homebrew
