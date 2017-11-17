@@ -14,7 +14,7 @@
   sh = show --name-only
   st = status -sb
   rug = stash
-	fpush = push
+  fpush = push --force-with-lease
 
 [color]
   ui = true
@@ -46,8 +46,8 @@
 [core]
   excludesfile = /Users/amaal.ali/.gitignore_global
 [difftool "sourcetree"]
-  cmd = opendiff \"$LOCAL\" \"$REMOTE\"
-  path = 
+	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+	path = 
 [mergetool "sourcetree"]
-  cmd = /Users/amaal.ali/Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
-  trustExitCode = true
+	cmd = /Users/amaal.ali/Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+	trustExitCode = true

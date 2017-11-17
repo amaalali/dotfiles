@@ -1,0 +1,6 @@
+########################
+# Environment variables
+########################
+
+# Point to local node modules
+export PATH=$PATH:./node_modules/.bin

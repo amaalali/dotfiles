@@ -3,3 +3,4 @@ tags
 tmp
 .git/
 ui/coverage/
+assets/javascripts/i18n/

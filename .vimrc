@@ -20,12 +20,12 @@ let g:ctrlp_use_caching = 0
 " Keymapping for CtrlP 
 nmap <leader>p :CtrlP<cr>
 " END Plugin config
-
+filetype on
 let mapleader = "\<Space>"        " Use the space key as our leader
 
 set t_Co=256
 syntax on                         " Turn on syntax highlighting
- 
+set backspace=indent,eol,start 
 set ruler                         " Display cursor position in buffer
 
 " set cursorline
