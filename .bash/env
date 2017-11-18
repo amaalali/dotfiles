@@ -1,6 +1,9 @@
-########################
-# Environment variables
-########################
+#################################
+#     Environment variables     #
+#################################
 
 # Point to local node modules
 export PATH=$PATH:./node_modules/.bin
+
+# Python
+export PATH=$PATH:~/Library/Python/3.6/bin
