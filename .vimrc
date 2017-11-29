@@ -1,6 +1,6 @@
 set nocompatible              " Disable vi compatability
 filetype off                  " To force plugins to load correctly required
-
+runtime macros/matchit.vim " Turn on matchit
 " Vim-plug and plugins
 call plug#begin('~/.vim/plugged')
   Plug 'ctrlpvim/ctrlp.vim'
