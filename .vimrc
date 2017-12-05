@@ -1,27 +1,38 @@
 set nocompatible              " Disable vi compatability
 filetype off                  " To force plugins to load correctly required
+let mapleader = "\<Space>"        " Use the space key as our leader
+
 runtime macros/matchit.vim " Turn on matchit
+
+" Required for vim-textobj-rubyblock
+if has("autocmd")
+  filetype indent plugin on
+endif
+
+
 " Vim-plug and plugins
 call plug#begin('~/.vim/plugged')
   Plug 'ctrlpvim/ctrlp.vim'
   Plug 'tpope/vim-surround'
   Plug 'tpope/vim-rails'
   Plug 'tpope/vim-commentary'
+  Plug 'kana/vim-textobj-user'
+  Plug 'nelstrom/vim-textobj-rubyblock'
   " turn on after looking into running vim rspec with tmux
   " Plug 'thoughtbot/vim-rspec' 
 call plug#end()
 " Load plugins before here
 
 " Plugin config
-"" Make CtrlP use ag for listing the files. Way faster and no useless files.
-let g:ctrlp_user_command = 'ag %s -l --hidden -g ""'
-" let g:ctrlp_user_command = 'ag %s -l --hidden --nocolor -g ""'
-let g:ctrlp_use_caching = 0
-" Keymapping for CtrlP 
-nmap <leader>p :CtrlP<cr>
+  "" Make CtrlP use ag for listing the files. Way faster and no useless files.
+  let g:ctrlp_user_command = 'ag %s -l --hidden -g ""'
+  let g:ctrlp_use_caching = 0
+ 
+  " Keymapping for CtrlP 
+  nmap <leader>p :CtrlP<cr> 
 " END Plugin config
+
 filetype on
-let mapleader = "\<Space>"        " Use the space key as our leader
 
 set t_Co=256
 syntax on                         " Turn on syntax highlighting
@@ -52,9 +63,6 @@ set wrap                          " Turn on line wrapping.
 
 set undofile
 
-" set list
-" set listchars=tab:▸\,eol:¬
-
 " Custom Keymappings
 nmap <leader>vi :tabe $MYVIMRC<cr>    " Open vimrc in vim tab
 nmap <leader>so :source $MYVIMRC<cr>  " Source $MYVIMRC settings
@@ -64,7 +72,7 @@ nmap <leader>so :source $MYVIMRC<cr>  " Source $MYVIMRC settings
 " nmap k gk                         " Navigate wrapped lines in sensable way 
 
 nmap <leader>a ^
-nmap <leader>z $
+" nmap <leader>z $
 nmap <leader>h :echo 'hi'<cr>
 
 imap jk <esc>
