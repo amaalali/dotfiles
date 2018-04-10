@@ -10,4 +10,4 @@
 ^/LICENSE.*
 
 # Temp files
-*.swp
+.swp

@@ -16,8 +16,10 @@ call plug#begin('~/.vim/plugged')
   Plug 'tpope/vim-surround'
   Plug 'tpope/vim-rails'
   Plug 'tpope/vim-commentary'
+  Plug 'tpope/vim-sleuth'
   Plug 'kana/vim-textobj-user'
   Plug 'nelstrom/vim-textobj-rubyblock'
+  Plug 'christoomey/vim-rfactory'
   " turn on after looking into running vim rspec with tmux
   " Plug 'thoughtbot/vim-rspec' 
 call plug#end()
