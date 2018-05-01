@@ -1,6 +1,3 @@
-[include]
-  path = .my_git_info
-
 [alias]
   a = add
   aa = add --all
@@ -45,9 +42,3 @@
   default = simple
 [core]
   excludesfile = /Users/amaal.ali/.gitignore_global
-[difftool "sourcetree"]
-	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
-	path = 
-[mergetool "sourcetree"]
-	cmd = /Users/amaal.ali/Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
-	trustExitCode = true

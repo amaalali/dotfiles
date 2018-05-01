@@ -1,9 +1,15 @@
 # Installing and Deleting
-Install command
+1. Install [hombrew ](https://brew.sh/)
+2. Install git `brew install git`
+3. Install stow `brew install stow`
+4. Link files: Install command `stow -t ~ -v .`
+5. Add the following to `.gitconfig` 
 ```
-stow -t ~ -v .
+[include]
+  path = .gitconfig_extension
 ```
 
+## Removal
 Uninstall command
 ```
 stow -t ~ -v -D .
@@ -16,22 +22,17 @@ For example, if the `.bash` file is removed the `.bash_profile` should still loa
 ```
 dotfiles/
 ├── .bash
-│   ├── .bash_aliases.un~
-│   ├── .bash_functions.un~
 │   ├── bash_aliases
 │   ├── bash_functions
-│   └── powerline
+│   └── env
 ├── .agignore
 ├── .bash_profile
 ├── .gitconfig
 ├── .gitignore
-├── .inputrc
-├── .pryrc
 ├── .stow-local-ignore
 ├── .tmux.conf
 ├── .vimrc
-├── README.md
-└── powerline-shell.py
+└── README.md
 ```
 
 # Vim

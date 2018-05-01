@@ -1,6 +1,6 @@
 # Environment Variables
 export EDITOR='vim'
-
+export JAVA_HOME=$(/usr/libexec/java_home)
 
 ##########################
 # Bash Promt Cusomizations
@@ -71,19 +71,9 @@ if [ -f ~/.bash/bash_functions ]; then
   . ~/.bash/bash_functions
 fi
 
-if [ -d ~/.sage/ ]; then
-  . ~/.sage/sage_aliases
-  . ~/.sage/sage_env
-  . ~/.sage/sage_functions
+if [ -d ~/.work/ ]; then
+  . ~/.work/index
 fi
-
-# Exercism
-if [ -f ~/.config/exercism/exercism_completion.bash ]; then
-  . ~/.config/exercism/exercism_completion.bash
-fi
-
-export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 
 # Git
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
