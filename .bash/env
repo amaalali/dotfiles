@@ -2,8 +2,12 @@
 #     Environment variables     #
 #################################
 
-# Point to local node modules
-# export PATH=$PATH:./node_modules/.bin
+# Point node modules
+if [ -f ./node_modules/.bin ]; then
+    export PATH=$PATH:./node_modules/.bin
+fi
 
 # Python
-# export PATH=$PATH:~/Library/Python/3.6/bin
+if [ -d ~/Library/Python/3.6/bin ]; then
+    export PATH=$PATH:~/Library/Python/3.6/bin
+fi
