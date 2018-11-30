@@ -1,5 +1,7 @@
 #################################
 #     Environment variables     #
+# and                           #
+#     PATH Config               #
 #################################
 
 # Point node modules
@@ -11,3 +13,14 @@ fi
 if [ -d ~/Library/Python/3.6/bin ]; then
     export PATH=$PATH:~/Library/Python/3.6/bin
 fi
+
+# Mongo Shell
+if [ -d ~/Documents/mongodb-osx-x86_64-enterprise-4.0.1 ]; then
+    export PATH=$PATH:~/Documents/mongodb-osx-x86_64-enterprise-4.0.1/bin
+fi
+
+# Rust
+if [ -f $HOME/.cargo ]; then
+    export PATH="$HOME/.cargo/bin:$PATH"
+fi
+
