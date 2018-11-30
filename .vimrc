@@ -1,6 +1,7 @@
 set nocompatible              " Disable vi compatability
 filetype off                  " To force plugins to load correctly required
 let mapleader = "\<Space>"        " Use the space key as our leader
+" set noundofile " To not create a .un~ file
 
 runtime macros/matchit.vim " Turn on matchit
 
@@ -50,7 +51,7 @@ set ruler                         " Display cursor position in buffer
 set showcmd                       " Display incomplete commands.
 set showmode                      " Display the mode you're in.
 set incsearch                     " Show match when typing
-" set hlsearch                      " Highlight all search matches
+set hlsearch                      " Highlight all search matches
 set laststatus=2                  " Always show status bar
 set lazyredraw                    " Dont redraw between macros
 set timeoutlen=750                " Time to wait for second key press
@@ -67,8 +68,6 @@ set autoindent
 
 set wrap                          " Turn on line wrapping.
 :au BufWinEnter * let w:m2=matchadd('ErrorMsg', '\%>120v.\+', -1) " Highlight error if line over 120 characters
-
-set undofile
 
 " Custom Keymappings
 nmap <leader>vi :tabe $MYVIMRC<cr>    " Open vimrc in vim tab
