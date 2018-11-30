@@ -1,6 +1,7 @@
 [alias]
   a = add
   aa = add --all
+  amend = commit --amend
   co = checkout
   com = checkout master
   cmm = commit --verbose
@@ -12,6 +13,7 @@
   st = status -sb
   rug = stash
   fpush = push --force-with-lease
+  pushus = push --set-upstream origin
 
 [color]
   ui = true
