@@ -106,4 +106,5 @@ function parse_git_dirty {
 #############################################
 # PS1 Prompt
 #############################################
-export PS1="\n\\$ \u 🔥 🇹🇹  💻 🔥 : \h @ \w \`parse_git_branch\` \`nonzero_return\` \n>"
+export PS1="\n\\$ \u 🔥 🇹🇹  💻 🔥 : \h @ \w \`parse_git_branch\`\n"
+
