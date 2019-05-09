@@ -41,3 +41,5 @@ fi
 if [ -f ~/.bash/.git-completion.bash ];
   then . ~/.bash/.git-completion.bash
 fi
+
+export PATH="$HOME/.cargo/bin:$PATH"
