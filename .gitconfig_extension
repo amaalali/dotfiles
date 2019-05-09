@@ -14,6 +14,8 @@
   rug = stash
   fpush = push --force-with-lease
   pushus = push --set-upstream origin
+  pun = !git push --set-upstream origin $(git rev-parse --abbrev-ref HEAD)
+  n = checkout -b 
 
 [color]
   ui = true
