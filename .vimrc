@@ -26,6 +26,10 @@ call plug#begin('~/.vim/plugged')
   Plug 'kana/vim-textobj-user'
   Plug 'nelstrom/vim-textobj-rubyblock'
   Plug 'christoomey/vim-rfactory'
+  " Plug 'vim-scripts/Syntastic'
+  Plug 'vim-syntastic/syntastic'
+  Plug 'rust-lang/rust.vim'
+  Plug 'racer-rust/vim-racer'
   " turn on after looking into running vim rspec with tmux
   " Plug 'thoughtbot/vim-rspec' 
 call plug#end()
@@ -41,6 +45,9 @@ call plug#end()
 " END Plugin config
 
 filetype on
+
+" Set mouse
+set mouse=a
 
 set t_Co=256
 syntax on                         " Turn on syntax highlighting
@@ -72,13 +79,14 @@ set wrap                          " Turn on line wrapping.
 " Custom Keymappings
 nmap <leader>vi :tabe $MYVIMRC<cr>    " Open vimrc in vim tab
 nmap <leader>so :source $MYVIMRC<cr>  " Source $MYVIMRC settings
+nmap <leader>bp :tabe ~/.bash_profile<cr>    " Open vimrc in vim tab
 
 " Navigation
 " nmap j gj                         " Navigate wrapped lines in sensable way 
 " nmap k gk                         " Navigate wrapped lines in sensable way 
 
 nmap <leader>a ^
-" nmap <leader>z $
+nmap <leader>z $
 nmap <leader>h :echo 'hi'<cr>
 
 imap jk <esc>
