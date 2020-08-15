@@ -47,7 +47,7 @@ call plug#end()
 filetype on
 
 " Set mouse
-set mouse=a
+" set mouse=a
 
 set t_Co=256
 syntax on                         " Turn on syntax highlighting
@@ -89,8 +89,8 @@ nmap <leader>a ^
 nmap <leader>z $
 nmap <leader>h :echo 'hi'<cr>
 
-imap jk <esc>
-imap kj <esc>
-imap jf <esc>
-imap fj <esc>
+" imap jk <esc>
+" imap kj <esc>
+" imap jf <esc>
+" imap fj <esc>
 

@@ -52,3 +52,5 @@ Install using `curl -fLo ~/.vim/autoload/plug.vim --create-dirs https://raw.gith
 - `the_silver_searcher` - ag, faster than ack
   - install via homebrew
 - https://github.com/arialdomartini/oh-my-git#install-the-font
+- Better git diff: https://github.com/dandavison/delta
+

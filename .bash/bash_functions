@@ -25,3 +25,12 @@ function git-fix-email () {
     fi
   ' --tag-name-filter cat -- --branches --tags
 }
+
+function has_conflicts () {
+
+  args='(<<<<<<<|=======|>>>>>>>)'
+
+  git grep "<<<<<<< Updated upstream"
+
+
+}

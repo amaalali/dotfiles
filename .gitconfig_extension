@@ -5,17 +5,21 @@
   co = checkout
   com = checkout master
   cmm = commit --verbose
-  d = 'diff --color | diff-so-fancy | less --tabs=4 -RFX'
+  d = diff
   g = grep
   l = log --pretty=format:'%Cred%h%Creset @ %Cgreen%cr%Creset: %s %C(bold)%d%Creset %C(bold blue)<%an>%Creset' --abbrev-commit
   pom = pull origin master
   sh = show --name-only
   st = status -sb
   rug = stash
+  s = switch
   fpush = push --force-with-lease
   pushus = push --set-upstream origin
   pun = !git push --set-upstream origin $(git rev-parse --abbrev-ref HEAD)
   n = checkout -b 
+
+[pull]
+	ff = only
 
 [color]
   ui = true
@@ -44,5 +48,15 @@
 
 [push]
   default = simple
+
 [core]
   excludesfile = /Users/amaal.ali/.gitignore_global
+  pager = delta
+
+[delta]
+  plus-color = "#012800"
+  minus-color = "#340001"
+  syntax-theme = Monokai Extended
+
+[interactive]
+  diffFilter = delta --color-only
