@@ -53,10 +53,6 @@
 [push]
   default = simple
 
-[core]
-  excludesfile = /Users/amaal.ali/.gitignore_global
-  pager = delta
-
 [delta]
   plus-color = "#012800"
   minus-color = "#340001"
