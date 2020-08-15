@@ -1,3 +1,7 @@
+[core]
+	hooksPath = ~/.githooks
+	excludesfile = ~/.gitignore
+
 [alias]
   a = add
   aa = add --all
