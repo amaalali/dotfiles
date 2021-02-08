@@ -53,6 +53,10 @@ fi
 #############################################
 export PATH="/usr/local/sbin:$PATH"
 
+#############################################
+# nvm ? node version manager
+#############################################
+export NVM_DIR="$HOME/.nvm"
 
 #############################################
 # Local config not included in dotfiles repo
@@ -60,8 +64,3 @@ export PATH="/usr/local/sbin:$PATH"
 if [ -d ~/.work ]; then
   . ~/.work/env
 fi
-
-#############################################
-# nvm ? node version manager
-#############################################
-export NVM_DIR="$HOME/.nvm"

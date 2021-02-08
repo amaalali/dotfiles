@@ -10,20 +10,11 @@ if [ -f ~/.bash/aliases ]; then
 fi
 
 #############################################
-# Local Config not included in dotfiles repo
-#############################################
-
-if [ -d ~/.work ]; then
-  # This file should link to any other bash config files
-  . ~/.work/index
-fi
-
-#############################################
 # Git completion
 #############################################
-if [ -f ~/.bash/.git-completion.bash ]; then
-  . ~/.bash/.git-completion.bash
-fi
+# if [ -f ~/.bash/.git-completion.bash ]; then
+#   . ~/.bash/.git-completion.bash
+# fi
 
 
 #############################################
@@ -48,3 +39,18 @@ if type brew &>/dev/null; then
 fi
 
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+
+#############################################
+# oh-my-zsh
+#############################################
+if [ -f ~/.bash/oh-my-zsh ]; then
+  . ~/.bash/oh-my-zsh
+fi
+
+#############################################
+# Local Config not included in dotfiles repo
+#############################################
+if [ -d ~/.work ]; then
+  # This file should link to any other bash config files
+  . ~/.work/index
+fi
