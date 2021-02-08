@@ -1,29 +1,5 @@
-function stash_and_checkout() {
-    git stash
-    git checkout $1
-    git stash pop stash@{0}
-}
-
 function change_for() {
   git grep --name-only --null $1 | xargs -0 sed -i '' s/$1/$2/g 
-}
-
-function git-fix-email () {
-  git filter-branch --env-filter '
-    OLD_EMAIL="amaal.ali@opencastsoftware.com"
-    CORRECT_NAME="Amaal Ali"
-    CORRECT_EMAIL="amq.ali@gmail.com"
-    if [ "$GIT_COMMITTER_EMAIL" = "$OLD_EMAIL" ]
-    then
-        export GIT_COMMITTER_NAME="$CORRECT_NAME"
-        export GIT_COMMITTER_EMAIL="$CORRECT_EMAIL"
-    fi
-    if [ "$GIT_AUTHOR_EMAIL" = "$OLD_EMAIL" ]
-    then
-        export GIT_AUTHOR_NAME="$CORRECT_NAME"
-        export GIT_AUTHOR_EMAIL="$CORRECT_EMAIL"
-    fi
-  ' --tag-name-filter cat -- --branches --tags
 }
 
 function has_conflicts () {
@@ -32,5 +8,8 @@ function has_conflicts () {
 
   git grep "<<<<<<< Updated upstream"
 
+}
 
+function gitignoreScala () {
+  curl https://gist.githubusercontent.com/amaalali/1f69e744caab193372f8629dbe9fe946/raw/.gitignore > .gitignore
 }
