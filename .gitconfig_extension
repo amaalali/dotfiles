@@ -21,9 +21,11 @@
   pushus = push --set-upstream origin
   pun = !git push --set-upstream origin $(git rev-parse --abbrev-ref HEAD)
   n = checkout -b 
+  fixup = commit --fixup
+  fixup-run = rebase --interactive --autosquash
 
 [pull]
-	ff = only
+	default = ff
 
 [color]
   ui = true
