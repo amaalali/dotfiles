@@ -4,6 +4,7 @@
 #  PATH Config                              #
 #############################################
 
+export EDITOR='vim'
 
 #############################################
 # User binaries
@@ -51,6 +52,14 @@ fi
 # Homebrew's sbin
 #############################################
 export PATH="/usr/local/sbin:$PATH"
+
+
+#############################################
+# Local config not included in dotfiles repo
+#############################################
+if [ -d ~/.work ]; then
+  . ~/.work/env
+fi
 
 #############################################
 # nvm ? node version manager

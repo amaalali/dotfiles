@@ -22,10 +22,3 @@ alias ..="cd .."
 alias ...="cd ../.."
 alias dot="cd ~/dotfiles"
 alias dev="cd ~/dev"
-
-# Scala
-alias b="bloop"
-
-# Scala
-alias mongoStart="docker run -d -p 27017:27017 mongo:3.6"
-

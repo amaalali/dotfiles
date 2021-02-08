@@ -1,26 +1,12 @@
-# Environment Variables
-export EDITOR='vim'
-
-
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
-
 #############################################
 # Config accoss systems
 #############################################
-if [ -f ~/.bash/env ]; then
-  . ~/.bash/env
-fi
-
-if [ -f ~/.bash/functions ]; then
+if [ -f ~/.bash/bash_functions ]; then
   . ~/.bash/functions
 fi
 
 if [ -f ~/.bash/aliases ]; then
   . ~/.bash/aliases
-fi
-
-if [ -f ~/.bash/prompt ]; then
-  . ~/.bash/prompt
 fi
 
 #############################################
@@ -30,20 +16,13 @@ fi
 if [ -d ~/.work ]; then
   # This file should link to any other bash config files
   . ~/.work/index
-  . ~/.work/env
 fi
-
-#############################################
-# bash completion
-#############################################
-
-[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
 #############################################
 # Git completion
 #############################################
-if [ -f ~/.bash/.git-completion.bash ];
-  then . ~/.bash/.git-completion.bash
+if [ -f ~/.bash/.git-completion.bash ]; then
+  . ~/.bash/.git-completion.bash
 fi
 
 
@@ -67,3 +46,5 @@ if type brew &>/dev/null; then
     done
   fi
 fi
+
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
