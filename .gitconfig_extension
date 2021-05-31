@@ -23,6 +23,7 @@
   n = checkout -b 
   fixup = commit --fixup
   fixup-run = rebase --interactive --autosquash
+  w = worktree
 
 [pull]
 	default = ff
