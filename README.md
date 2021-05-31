@@ -24,14 +24,15 @@ dotfiles/
 ├── .bash
 │   ├── bash_aliases
 │   ├── bash_functions
-│   └── env
 ├── .agignore
-├── .bash_profile
-├── .gitconfig
+├── .gitconfig_extensions
 ├── .gitignore
 ├── .stow-local-ignore
 ├── .tmux.conf
 ├── .vimrc
+├── .zprofile
+├── .zshnenv
+├── .zshrc
 └── README.md
 ```
 
