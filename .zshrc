@@ -51,7 +51,4 @@ autoload -U compinit
 fpath=($HOME/.bloop/zsh $fpath)
 compinit
 
-
-nvm.sh
-
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
