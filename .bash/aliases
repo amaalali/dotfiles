@@ -16,6 +16,7 @@ alias gg="git grep"
 alias cc="clear"
 alias ll="ls -l"
 alias all="ls -al"
+alias llf="ls -al | fzf"
 
 # Directory Navigation
 alias ..="cd .."
