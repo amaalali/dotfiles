@@ -1,21 +1,20 @@
 #############################################
 # Config accoss systems
 #############################################
-if [ -f ~/.bash/bash_functions ]; then
+# my bash functions
+if [ -f ~/.bash/functions ]; then
   . ~/.bash/functions
 fi
 
+# my aliases
 if [ -f ~/.bash/aliases ]; then
   . ~/.bash/aliases
 fi
 
-#############################################
-# Git completion
-#############################################
-# if [ -f ~/.bash/.git-completion.bash ]; then
-#   . ~/.bash/.git-completion.bash
-# fi
-
+# my environement variables
+if [ -f ~/.bash/env ]; then
+  . ~/.bash/env
+fi
 
 #############################################
 # pyenv + Python support
@@ -50,7 +49,23 @@ fi
 #############################################
 # Local Config not included in dotfiles repo
 #############################################
-if [ -d ~/.work ]; then
+if [ -f ~/.work/index ]; then
   # This file should link to any other bash config files
   . ~/.work/index
 fi
+
+if [ -f ~/.work/env ]; then
+  # This file should link to any other bash config files
+  . ~/.work/env
+fi
+
+#############################################
+# Bloop ZSH completions
+# see: https://scalacenter.github.io/bloop/setup#zsh-completions
+#############################################
+autoload -U compinit
+fpath=($HOME/.bloop/zsh $fpath)
+compinit
+
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
