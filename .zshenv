@@ -54,6 +54,12 @@ fi
 export PATH="/usr/local/sbin:$PATH"
 
 #############################################
+# Dependencies installed with Coursier
+# https://get-coursier.io
+#############################################
+export PATH="$PATH:/Users/amaalali/Library/Application Support/Coursier/bin"
+
+#############################################
 # nvm ? node version manager
 #############################################
 export NVM_DIR="$HOME/.nvm"
