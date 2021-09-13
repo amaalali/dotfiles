@@ -1,14 +1,8 @@
 set nocompatible              " Disable vi compatability
 filetype off                  " To force plugins to load correctly required
 let mapleader = "\<Space>"        " Use the space key as our leader
-" set noundofile " To not create a .un~ file
 
 runtime macros/matchit.vim " Turn on matchit
-
-" Required for vim-textobj-rubyblock
-if has("autocmd")
-  filetype indent plugin on
-endif
 
 if empty(glob('~/.vim/autoload/plug.vim'))
   silent !curl -fLo ~/.vim/autoload/plug.vim --create-dirs
@@ -20,18 +14,11 @@ endif
 call plug#begin('~/.vim/plugged')
   Plug 'ctrlpvim/ctrlp.vim'
   Plug 'tpope/vim-surround'
-  Plug 'tpope/vim-rails'
   Plug 'tpope/vim-commentary'
   Plug 'tpope/vim-sleuth'
   Plug 'kana/vim-textobj-user'
-  Plug 'nelstrom/vim-textobj-rubyblock'
   Plug 'christoomey/vim-rfactory'
-  " Plug 'vim-scripts/Syntastic'
   Plug 'vim-syntastic/syntastic'
-  Plug 'rust-lang/rust.vim'
-  Plug 'racer-rust/vim-racer'
-  " turn on after looking into running vim rspec with tmux
-  " Plug 'thoughtbot/vim-rspec' 
 call plug#end()
 " Load plugins before here
 
@@ -89,8 +76,8 @@ nmap <leader>a ^
 nmap <leader>z $
 nmap <leader>h :echo 'hi'<cr>
 
-" imap jk <esc>
-" imap kj <esc>
+imap jk <esc>
+imap kj <esc>
 " imap jf <esc>
 " imap fj <esc>
 
