@@ -12,5 +12,5 @@ FPATH=$(brew --prefix)/share/zsh/site-functions:$FPATH
 #############################################
 
 # >>> JVM installed by coursier >>>
-export JAVA_HOME="/Users/amaalali/Library/Caches/Coursier/jvm/adopt@1.8.0-292/Contents/Home"
+export JAVA_HOME="/Users/amaalali/Library/Caches/Coursier/jvm/zulu@1.8.282"
 # <<< JVM installed by coursier <<<
