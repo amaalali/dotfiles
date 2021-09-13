@@ -31,7 +31,7 @@ fi
 # Mongo Shell
 #############################################
 #if [ -d ~/Documents/mongodb-osx-x86_64-enterprise-4.0.1 ]; then
-#    export PATH=$PATH:~/dev/mongodb-osx-x86_64-3.6.17/bin/
+#    export PATH=$PATH:~/code/mongodb-osx-x86_64-3.6.17/bin/
 #fi
 
 #############################################
