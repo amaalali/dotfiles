@@ -11,5 +11,5 @@ function has_conflicts () {
 }
 
 function gitignoreScala () {
-  curl https://gist.githubusercontent.com/amaalali/1f69e744caab193372f8629dbe9fe946/raw/.gitignore > .gitignore
+  curl https://gist.githubusercontent.com/amaalali/3e70eb1d0ede50f52ecd5db00732e038/raw > .gitignore
 }
