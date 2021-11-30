@@ -1,9 +1,18 @@
 # Installing and Deleting
+## Dependencies
+- homebrew
+- git
+- stow
+- fzf
+
+## Setup steps
+
 1. Install [hombrew ](https://brew.sh/)
 2. Install git `brew install git`
 3. Install stow `brew install stow`
-4. Link files: Install command `stow -t ~ -v .`
-5. Add the following to `.gitconfig` 
+4. 3. Install stow `brew install fzf`
+5. Link files: Install command `stow -t ~ -v .`
+6. Add the following to `.gitconfig` 
 ```
 [include]
   path = .gitconfig_extension
