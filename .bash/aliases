@@ -22,3 +22,6 @@ alias llf="ls -al | fzf"
 alias ..="cd .."
 alias ...="cd ../.."
 alias dot="cd ~/dotfiles"
+
+# For cli programs
+alias scli="scala-cli"
