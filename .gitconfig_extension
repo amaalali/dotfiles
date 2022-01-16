@@ -1,69 +1,67 @@
 [core]
-	hooksPath = ~/.githooks
-	excludesfile = ~/.gitignore
+  	hooksPath = ~/.githooks
+  	excludesfile = ~/.gitignore
+    pager = delta
 
 [alias]
-  a = add
-  aa = add --all
-  amend = commit --amend
-  co = checkout
-  com = checkout master
-  cmm = commit --verbose
-  d = diff
-  g = grep
-  l = log --pretty=format:'%Cred%h%Creset @ %Cgreen%cr%Creset: %s %C(bold)%d%Creset %C(bold blue)<%an>%Creset' --abbrev-commit
-  pom = pull origin master
-  sh = show --name-only
-  st = status -sb
-  rug = stash
-  s = switch
-  fpush = push --force-with-lease
-  pushus = push --set-upstream origin
-  pun = !git push --set-upstream origin $(git rev-parse --abbrev-ref HEAD)
-  n = checkout -b 
-  fixup = commit --fixup
-  fixup-run = rebase --interactive --autosquash
-  w = worktree
+    a = add
+    aa = add --all
+    amend = commit --amend
+    co = checkout
+    com = checkout master
+    cmm = commit --verbose
+    d = diff
+    g = grep
+    l = log --pretty=format:'%Cred%h%Creset @ %Cgreen%cr%Creset: %s %C(bold)%d%Creset %C(bold blue)<%an>%Creset' --abbrev-commit
+    pom = pull origin master
+    sh = show --name-only
+    st = status -sb
+    rug = stash
+    s = switch
+    fpush = push --force-with-lease
+    pushus = push --set-upstream origin
+    pun = !git push --set-upstream origin $(git rev-parse --abbrev-ref HEAD)
+    n = checkout -b 
+    fixup = commit --fixup
+    fixup-run = rebase --interactive --autosquash
+    w = worktree
 
 [pull]
-	default = ff
-
-[color]
-  ui = true
-
-[color "branch"]
-  current = yellow reverse
-  local = yellow
-  remote = green
-
-[color "diff"]
-  meta = yellow
-  frag = magenta
-  old = red
-  new = green
-
-[color "status"]
-  added = yellow
-  changed = red
-  untracked = cyan bold
-
-[color "diff-highlight"]
-  oldNormal = red bold
-  oldHighlight = red bold 52
-  newNormal = green bold
-  newHighlight = green bold 22
+	  default = ff
 
 [push]
-  default = simple
-
-[core]
-  excludesfile = /Users/amaal.ali/.gitignore_global
-  pager = delta
-
+    default = simple
+  
 [delta]
-  plus-color = "#012800"
-  minus-color = "#340001"
-  syntax-theme = Monokai Extended
+    syntax-theme = Monokai Extended
+    line-numbers = true
+    side-by-side = true
+    navigate = true  # use n and N to move between diff sections
 
 [interactive]
-  diffFilter = delta --color-only
+    diffFilter = delta --color-only
+
+[color]
+    ui = true
+
+[color "branch"]
+    current = yellow reverse
+    local = yellow
+    remote = green
+
+[color "diff"]
+    meta = yellow
+    frag = magenta
+    old = red
+    new = green
+
+[color "status"]
+    added = yellow
+    changed = red
+    untracked = cyan bold
+
+[color "diff-highlight"]
+    oldNormal = red bold
+    oldHighlight = red bold 52
+    newNormal = green bold
+    newHighlight = green bold 22
