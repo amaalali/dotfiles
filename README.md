@@ -4,8 +4,9 @@
 
 - homebrew
 - git
-- stow
-- fzf
+- stow - automatically creates and delete symbolic links for all dotfiles
+- fzf - fuzzy search
+- [delta](https://github.com/dandavison/delta) - better git diff
 
 ## Setup steps
 
@@ -14,9 +15,11 @@
 3. Install stow `brew install stow`
 4. 3. Install stow `brew install fzf`
 5. Link files: Install command
+
 ```
 stow -t ~ -v .
 ```
+
 6. Add the following to `.gitconfig`
 
 ```
@@ -43,23 +46,6 @@ stow -t ~ -v -D .
 The aim of the folder structure adopted here is to make a modular folder strucure.
 For example, if the `.bash` file is removed the `.bash_profile` should still load.
 
-```
-dotfiles/
-├── .bash
-│   ├── bash_aliases
-│   ├── bash_functions
-├── .agignore
-├── .gitconfig_extensions
-├── .gitignore
-├── .stow-local-ignore
-├── .tmux.conf
-├── .vimrc
-├── .zprofile
-├── .zshnenv
-├── .zshrc
-└── README.md
-```
-
 ## Note
 
 - Instead of `.zshrc` I have a `.zshrc_extension`. This is so that the .zshrc that oh-my-zsh creates can source the `.zshrc_extension`
@@ -84,4 +70,3 @@ dotfiles/
 - `the_silver_searcher` - ag, faster than ack
   - install via homebrew
 - https://github.com/arialdomartini/oh-my-git#install-the-font
-- Better git diff: https://github.com/dandavison/delta
