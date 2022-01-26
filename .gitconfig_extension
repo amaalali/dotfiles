@@ -8,19 +8,19 @@
     aa = add --all
     amend = commit --amend
     co = checkout
-    com = checkout master
     cmm = commit --verbose
     d = diff
     g = grep
     l = log --pretty=format:'%Cred%h%Creset @ %Cgreen%cr%Creset: %s %C(bold)%d%Creset %C(bold blue)<%an>%Creset' --abbrev-commit
-    pom = pull origin master
+    pom = pull origin main
     sh = show --name-only
     st = status -sb
     rug = stash
     s = switch
     fpush = push --force-with-lease
-    pushus = push --set-upstream origin
-    pun = !git push --set-upstream origin $(git rev-parse --abbrev-ref HEAD)
+    pushf = push --force-with-lease
+    pushn = !git push --set-upstream origin $(git rev-parse --abbrev-ref HEAD)
+    sm = switch main
     n = checkout -b 
     fixup = commit --fixup
     fixup-run = rebase --interactive --autosquash
