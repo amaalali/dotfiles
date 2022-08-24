@@ -3,10 +3,13 @@
   	excludesfile = ~/.gitignore
     pager = delta
 
+[includeIf "gitdir:code/ocos/"]
+  path = .gitconfig-oc
+
 [alias]
     a = add
     aa = add --all
-    amend = commit --amend
+    amend = commit --amend --no-edit
     co = checkout
     cmm = commit --verbose
     d = diff
@@ -27,7 +30,7 @@
     w = worktree
 
 [pull]
-	  default = ff
+    rebase = false
 
 [push]
     default = simple
