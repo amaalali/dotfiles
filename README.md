@@ -33,6 +33,8 @@ stow -t ~ -v .
 . ~/.zshrc_extension
 ```
 
+8. Make a directory in home directory (`~`) called `.gitconfig-work` and add work email config
+
 ## Removal
 
 Uninstall command
