@@ -11,7 +11,8 @@
     aa = add --all
     amend = commit --amend --no-edit
     co = checkout
-    cmm = commit --verbose
+    cm = commit --verbose
+    cmm = commit --verbose -m
     d = diff
     g = grep
     l = log --pretty=format:'%Cred%h%Creset @ %Cgreen%cr%Creset: %s %C(bold)%d%Creset %C(bold blue)<%an>%Creset' --abbrev-commit
