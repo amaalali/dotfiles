@@ -1,14 +1,15 @@
 #!/bin/bash
 
 ##########
-# Don't commit to master
+# Don't commit to main or master
 ##########
-protected_branch='master'
+protected_branch_1='main'
+protected_branch_2='master'
 current_branch=$(git symbolic-ref HEAD | sed -e 's,.*/\(.*\),\1,')
 
-if [ $protected_branch = $current_branch ]
+if [ $protected_branch_1 = $current_branch ] || [ $protected_branch_2 = $current_branch ]
 then
-    read -p "You're about to commit to master, is that what you intended? [y|n] " -n 1 -r < /dev/tty
+    read -p "You're about to commit to main / master, is that what you intended? [y|n] " -n 1 -r < /dev/tty
     echo
     if echo $REPLY | grep -E '^[Yy]$' > /dev/null
     then

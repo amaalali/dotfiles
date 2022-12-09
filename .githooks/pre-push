@@ -1,12 +1,13 @@
 #!/bin/bash
 
 ##########
-# Don't push to master
+# Don't push to main / master
 ##########
-protected_branch='master'
+protected_branch_1='main'
+protected_branch_2='master'
 current_branch=$(git symbolic-ref HEAD | sed -e 's,.*/\(.*\),\1,')
 
-if [ $protected_branch = $current_branch ]
+if [ $protected_branch_1 = $current_branch ] || [ $protected_branch_2 = $current_branch ]
 then
     read -p "You're about to push master, is that what you intended? [y|n] " -n 1 -r < /dev/tty
     echo

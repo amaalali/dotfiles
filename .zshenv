@@ -57,8 +57,7 @@ export PATH="/usr/local/sbin:$PATH"
 # Dependencies installed with Coursier
 # https://get-coursier.io
 #############################################
-export PATH="$PATH:/Users/amaalali/Library/Application Support/Coursier/bin"
-export PATH="$PATH:/Users/amaal.ali/Library/Application Support/Coursier/bin"
+export PATH="$PATH:$HOME/Library/Application Support/Coursier/bin"
 
 #############################################
 # Add Java bin directory to PATH
