@@ -76,3 +76,8 @@ export NVM_DIR="$HOME/.nvm"
 if [ -d ~/.shell_conf_local ]; then
   . ~/.shell_conf_local/env
 fi
+
+#############################################
+# Add the Jetbrains Toolbox Apps to path
+#############################################
+[ -d $HOME/Library/Application Support/JetBrains ] && export PATH="$PATH:$HOME/Library/Application Support/JetBrains/Toolbox/scripts"
