@@ -80,4 +80,4 @@ fi
 #############################################
 # Add the Jetbrains Toolbox Apps to path
 #############################################
-[ -d $HOME/Library/Application Support/JetBrains ] && export PATH="$PATH:$HOME/Library/Application Support/JetBrains/Toolbox/scripts"
+[ -d "$HOME/Library/Application Support/JetBrains" ] && export PATH="$PATH:$HOME/Library/Application Support/JetBrains/Toolbox/scripts"

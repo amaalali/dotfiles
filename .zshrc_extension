@@ -60,6 +60,11 @@ compinit
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
+#############################################
+# >>> scala-cli completions >>>
+#############################################
+fpath=("/Users/amaalali/Library/Application Support/ScalaCli/completions/zsh" $fpath)
+compinit
 
 #############################################
 # NVM
