@@ -3,9 +3,6 @@
   	excludesfile = ~/.gitignore
     pager = delta
 
-[includeIf "gitdir:code/ocos/"]
-  path = .gitconfig-oc
-
 [alias]
     a = add
     aa = add --all
