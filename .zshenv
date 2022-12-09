@@ -23,8 +23,8 @@ fi
 #############################################
 # Python
 #############################################
-if [ -d ~/Library/Python/3.6/bin ]; then
-    export PATH=$PATH:~/Library/Python/3.6/bin
+if [ -d ~/Library/Python/3.8/bin ]; then
+    export PATH=$PATH:~/Library/Python/3.8/bin
 fi
 
 #############################################
