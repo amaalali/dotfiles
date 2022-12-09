@@ -32,7 +32,10 @@
 
 [push]
     default = simple
-  
+
+[commit]
+	gpgsign = true
+ 
 [delta]
     syntax-theme = Monokai Extended
     line-numbers = true
