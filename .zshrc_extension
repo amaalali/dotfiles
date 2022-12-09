@@ -2,18 +2,31 @@
 # Config accoss systems
 #############################################
 # my bash functions
-if [ -f ~/.bash/functions ]; then
-  . ~/.bash/functions
+if [ -f ~/.shell_conf_synced/functions ]; then
+  . ~/.shell_conf_synced/functions
 fi
 
 # my aliases
-if [ -f ~/.bash/aliases ]; then
-  . ~/.bash/aliases
+if [ -f ~/.shell_conf_synced/aliases ]; then
+  . ~/.shell_conf_synced/aliases
 fi
 
 # my environement variables
-if [ -f ~/.bash/env ]; then
-  . ~/.bash/env
+if [ -f ~/.shell_conf_synced/env ]; then
+  . ~/.shell_conf_synced/env
+fi
+
+#############################################
+# Set the GPG_TTY and start gpg-agent
+#############################################
+export GPG_TTY=$(tty)
+gpgconf --launch gpg-agent
+
+#############################################
+# oh-my-zsh
+#############################################
+if [ -f ~/.shell_conf_synced/oh-my-zsh ]; then
+  . ~/.shell_conf_synced/oh-my-zsh
 fi
 
 #############################################
@@ -23,24 +36,18 @@ if command -v pyenv 1>/dev/null 2>&1; then
   eval "$(pyenv init -)"
 fi
 
-#############################################
-# oh-my-zsh
-#############################################
-if [ -f ~/.bash/oh-my-zsh ]; then
-  . ~/.bash/oh-my-zsh
-fi
 
 #############################################
 # Local Config not included in dotfiles repo
 #############################################
-if [ -f ~/.work/index ]; then
+if [ -f ~/.shell_conf_local/index ]; then
   # This file should link to any other bash config files
-  . ~/.work/index
+  . ~/.shell_conf_local/index
 fi
 
-if [ -f ~/.work/env ]; then
+if [ -f ~/.shell_conf_local/env ]; then
   # This file should link to any other bash config files
-  . ~/.work/env
+  . ~/.shell_conf_local/env
 fi
 
 #############################################

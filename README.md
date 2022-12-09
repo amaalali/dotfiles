@@ -66,7 +66,7 @@ stow -t ~ -v -D .
 # Folder structure
 
 The aim of the folder structure adopted here is to make a modular folder structure.
-For example, if the `.bash` file is removed the `.bash_profile` should still load.
+For example, if the `.shell_conf` file is removed the `.zshrc` should still load.
 
 ## Note
 

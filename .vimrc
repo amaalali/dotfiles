@@ -66,7 +66,6 @@ set wrap                          " Turn on line wrapping.
 " Custom Keymappings
 nmap <leader>vi :tabe $MYVIMRC<cr>    " Open vimrc in vim tab
 nmap <leader>so :source $MYVIMRC<cr>  " Source $MYVIMRC settings
-nmap <leader>bp :tabe ~/.bash_profile<cr>    " Open vimrc in vim tab
 
 " Navigation
 " nmap j gj                         " Navigate wrapped lines in sensable way 
@@ -80,4 +79,3 @@ imap jk <esc>
 imap kj <esc>
 " imap jf <esc>
 " imap fj <esc>
-

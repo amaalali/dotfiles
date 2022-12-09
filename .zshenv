@@ -73,6 +73,6 @@ export NVM_DIR="$HOME/.nvm"
 #############################################
 # Local config not included in dotfiles repo
 #############################################
-if [ -d ~/.work ]; then
-  . ~/.work/env
+if [ -d ~/.shell_conf_local ]; then
+  . ~/.shell_conf_local/env
 fi
