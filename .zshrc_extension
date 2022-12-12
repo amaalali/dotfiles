@@ -26,9 +26,10 @@ gpgconf --launch gpg-agent
 #############################################
 # oh-my-zsh
 #############################################
-if [ -f ~/.shell_conf_synced/oh-my-zsh ]; then
-  . ~/.shell_conf_synced/oh-my-zsh
-fi
+# Going to try switching to fish shell
+# if [ -f ~/.shell_conf_synced/oh-my-zsh ]; then
+#   . ~/.shell_conf_synced/oh-my-zsh
+# fi
 
 #############################################
 # pyenv + Python support

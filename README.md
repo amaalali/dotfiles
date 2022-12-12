@@ -18,7 +18,7 @@
 1. Install fzf `brew install fzf`
 1. Install delta
 1. Link files: Install command `stow -t ~ -v .`
-1. Install and setup `oh-my-zsh` [setup instructions](#setup-oh-my-zsh-config)
+<!-- 1. Install and setup `oh-my-zsh` [setup instructions](#setup-oh-my-zsh-config) -->
 
 
 ### Setup Git Config
@@ -47,8 +47,8 @@
 
 ```
 
-### Setup oh-my-zsh config
-1. Install [oh-my-zsh](https://ohmyz.sh)
+### Setup ZSH config
+<!-- 1. Install [oh-my-zsh](https://ohmyz.sh) -->
 1. Add the following line to the `.zshrc
 
 ```
