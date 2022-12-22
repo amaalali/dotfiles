@@ -1,25 +1,28 @@
 # Installing and Deleting
 
-## Dependencies
-
-- homebrew
-- git
-- stow - automatically creates and delete symbolic links for all dotfiles
-- [Starship shell](https://starship.rs/)
-- fzf - fuzzy search
-- [delta](https://github.com/dandavison/delta) - better git diff
-- [SDKMan](https://sdkman.io)
-
 ## Setup steps
-
-1. Install [hombrew](https://brew.sh/)
-1. Install and setup git [setup instructions](#setup-git-config)
-1. Install stow `brew install stow`
-1. Install fzf `brew install fzf`
+1. Install essential dependencies:
+    1. [homebrew](https://brew.sh/)
+    1. git - [see git setup instructions](#setup-git-config)
+    1. stow - `brew install stow`
+    1. [Starship shell prompt](https://starship.rs/)
+1. Install stow 
 1. Install delta
-1. Link files: Install command `stow -t ~ -v .`
-<!-- 1. Install and setup `oh-my-zsh` [setup instructions](#setup-oh-my-zsh-config) -->
+1. Link files using [the install command](#install-command-to-link-dotfiles) 
+1. Install current font - [see font install instructions and setup guide](#setup-fonts)
+1. Install [Starship.rs](https://starship.rs)
+1. Install common tools:
+    1. fzf - `brew install fzf`
+    1. [delta](https://github.com/dandavison/delta) - better git diff
+    1. [SDKMan](https://sdkman.io)
 
+### Install Command to link dotfiles
+1. In command line ensure that the working directory is the base of this project
+1. Run command
+
+```
+ `stow -t ~ -v .`
+```
 
 ### Setup Git Config
 1. Install git: `brew install git`
@@ -48,16 +51,25 @@
 ```
 
 ### Setup ZSH config
-<!-- 1. Install [oh-my-zsh](https://ohmyz.sh) -->
 1. Add the following line to the `.zshrc
 
 ```
 . ~/.zshrc_extension
 ```
 
-## Removal
+### Setup fonts
+1. Install font: `brew install --cask font-fira-code-nerd-font`
+1. Change font for **each profile** to use installed font
+2. Configure font in VSCode
+    1. Change font familty: `"editor.fontFamily": "'FiraCode Nerd Font Mono', Menlo, Monaco, 'Courier New', monospace"`
+    1. Enable ligatures: `"editor.fontLigatures": true`
 
-Uninstall command
+
+See [Nerd Fonts](https://www.nerdfonts.com) for more options.
+
+## Removal of dotfiles
+1. In command line ensure that the working directory is the base of this project
+1. Uninstall command:
 
 ```
 stow -t ~ -v -D .
