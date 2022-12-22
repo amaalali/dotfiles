@@ -5,12 +5,11 @@
     1. [homebrew](https://brew.sh/)
     1. git - [see git setup instructions](#setup-git-config)
     1. stow - `brew install stow`
-    1. [Starship shell prompt](https://starship.rs/)
 1. Install stow 
 1. Install delta
 1. Link files using [the install command](#install-command-to-link-dotfiles) 
 1. Install current font - [see font install instructions and setup guide](#setup-fonts)
-1. Install [Starship.rs](https://starship.rs)
+1. Install [Starship shell prompt](https://starship.rs/)
 1. Install common tools:
     1. fzf - `brew install fzf`
     1. [delta](https://github.com/dandavison/delta) - better git diff
@@ -21,7 +20,7 @@
 1. Run command
 
 ```
- `stow -t ~ -v .`
+stow -t ~ -v .
 ```
 
 ### Setup Git Config
