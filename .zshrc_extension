@@ -15,7 +15,7 @@ fi
 if [ -f ~/.shell_conf_synced/aliases ]; then
   . ~/.shell_conf_synced/aliases
 fi
-
+k
 # my environement variables
 if [ -f ~/.shell_conf_synced/env ]; then
   . ~/.shell_conf_synced/env
@@ -79,3 +79,8 @@ compinit
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+#############################################
+# Print custom shell welcome message
+#############################################
+echo "$(cat $HOME/.the_coding_laama.txt)"
