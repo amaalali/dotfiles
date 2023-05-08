@@ -3,17 +3,19 @@
 ## Setup steps
 1. Install essential dependencies:
     1. [homebrew](https://brew.sh/)
-    1. git - [see git setup instructions](#setup-git-config)
-    1. stow - `brew install stow`
-1. Install stow 
-1. Install delta
-1. Link files using [the install command](#install-command-to-link-dotfiles) 
-1. Install current font - [see font install instructions and setup guide](#setup-fonts)
-1. Install [Starship shell prompt](https://starship.rs/)
-1. Install common tools:
+    2. git - [see git setup instructions](#setup-git-config)
+    3. stow - `brew install stow`
+2. Install stow 
+3. Install delta
+4. Link files using [the install command](#install-command-to-link-dotfiles) 
+5. Install current font - [see font install instructions and setup guide](#setup-fonts)
+6. Install [Starship shell prompt](https://starship.rs/)
+7. Install common tools:
     1. fzf - `brew install fzf`
-    1. [delta](https://github.com/dandavison/delta) - better git diff
-    1. [SDKMan](https://sdkman.io)
+    2. [delta](https://github.com/dandavison/delta) - better git diff
+    3. [SDKMan](https://sdkman.io)
+8. Install [Scala-CLI](https://scala-cli.virtuslab.org/)
+    1. See [installation section](#setup-scala-cli)
 
 ### Install Command to link dotfiles
 1. In command line ensure that the working directory is the base of this project
@@ -58,17 +60,22 @@ stow -t ~ -v .
 
 ### Setup fonts
 1. Install font: `brew install --cask font-fira-code-nerd-font`
-1. Change font for **each profile** to use installed font
-2. Configure font in VSCode
+2. Change font for **each profile** to use installed font
+3. Configure font in VSCode
     1. Change font familty: `"editor.fontFamily": "'FiraCode Nerd Font Mono', Menlo, Monaco, 'Courier New', monospace"`
     1. Enable ligatures: `"editor.fontLigatures": true`
 
 
 See [Nerd Fonts](https://www.nerdfonts.com) for more options.
 
+### Setup Scala CLI
+1. Install using SDKMAN
+2. Follow instructions for [shell completions](https://scala-cli.virtuslab.org/install#shell-completions)
+
+
 ## Removal of dotfiles
 1. In command line ensure that the working directory is the base of this project
-1. Uninstall command:
+2. Uninstall command:
 
 ```
 stow -t ~ -v -D .
