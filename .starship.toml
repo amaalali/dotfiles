@@ -1,7 +1,6 @@
-"$schema" = 'https://starship.rs/config-schema.json'
+# "$schema" = 'https://starship.rs/config-schema.json' 
 
 [username]
-# style_user = "green bold"
 style_user = "purple bold"
 style_root = "red bold"
 format = "[$user]($style) "
@@ -31,9 +30,9 @@ format = "in dir { [$path]($style)[$read_only]($read_only_style) } "
 disabled = false
 
 [character]                            # The name of the module we are configuring is "character"
-success_symbol = "[ ❯](bold blue)"     # The "success_symbol" segment is being set to "➜" with the color "bold green"
-error_symbol = "[ ❯](bold red)"
-vicmd_symbol = "[ ❯](bold white)"
+success_symbol = '[❯](bold blue)'     # The "success_symbol" segment is being set to "➜" with the color "bold green'
+error_symbol = '[-❯](bold red)'
+vicmd_symbol = "[❯](bold white)"
 
 [cmd_duration]
 min_time = 4
@@ -42,7 +41,7 @@ disabled = false
 style = "italic white"
 format = "{ took $duration }"
 
-# Language confi
+# Language config
 [aws]
 symbol = "  "
 
