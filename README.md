@@ -1,13 +1,14 @@
 # Installing and Deleting
 
 ## Setup steps
+1. Clone this repo to location ~/code/dotfiles
 1. Install essential dependencies:
     1. [homebrew](https://brew.sh/)
     2. git - [see git setup instructions](#setup-git-config)
     3. stow - `brew install stow`
-2. Install stow 
+2. Install stow
 3. Install delta
-4. Link files using [the install command](#install-command-to-link-dotfiles) 
+4. Link files using [the install command](#install-command-to-link-dotfiles)
 5. Install current font - [see font install instructions and setup guide](#setup-fonts)
 6. Install [Starship shell prompt](https://starship.rs/)
 7. Install common tools:
@@ -28,13 +29,13 @@ stow -t ~ -v .
 ### Setup Git Config
 1. Install git: `brew install git`
 1. Generate GPG signing keys for an email
-1. Create a local `.gitconfig` file and add the username, email, and the GPG Signing key. 
-1. Configure git by adding the following line to the `.gitconfig` 
+1. Create a local `.gitconfig` file and add the username, email, and the GPG Signing key.
+1. Configure git by adding the following line to the `.gitconfig`
   ```
   [include]
     path = .gitconfig_extension
   ```
-5. For folder specific / project specific git config, create a different config file `.gitconfig_${folder_name}` and link to that for that folder in `.gitconfig`. For example to use a different user details for signing commits in folder `~/code/foo` then add the following 
+5. For folder specific / project specific git config, create a different config file `.gitconfig_${folder_name}` and link to that for that folder in `.gitconfig`. For example to use a different user details for signing commits in folder `~/code/foo` then add the following
 
 ```
 // .gitconfig

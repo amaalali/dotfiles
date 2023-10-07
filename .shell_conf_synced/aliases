@@ -10,6 +10,10 @@ alias gg="git grep"
 
 # System
 alias cc="clear"
+alias lsl="ls -l"
+alias lsa="ls -al"
+alias lsf="ls -al | fzf"
+
 alias ll="ls -l"
 alias all="ls -al"
 alias llf="ls -al | fzf"
@@ -17,7 +21,7 @@ alias llf="ls -al | fzf"
 # Directory Navigation
 alias ..="cd .."
 alias ...="cd ../.."
-alias dot="cd ~/dotfiles"
+alias dotfiles="cd $MY_DOTFILES_DIR"
 
 # For cli programs
 alias scli="scala-cli"
