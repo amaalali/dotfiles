@@ -1,10 +1,10 @@
-# <Local config> 
+# <Local config>
     # not included in dotfiles repo
 
     if [ -d ~/.shell_conf_local ]; then
     . ~/.shell_conf_local/env
     fi
-# </Local config> 
+# </Local config>
 
 
 # <Environment variables>
@@ -17,6 +17,7 @@
     # Startship config path https://starship.rs/config
     export STARSHIP_CONFIG=~/.starship.toml
 
+    export PYENV_ROOT=$HOME/.pyenv
 
     # Location of dotfiles
     export MY_DOTFILES_DIR=$HOME/code/dotfiles

@@ -15,7 +15,7 @@ fi
 if [ -f ~/.shell_conf_synced/aliases ]; then
   . ~/.shell_conf_synced/aliases
 fi
-k
+
 # my environement variables
 if [ -f ~/.shell_conf_synced/env ]; then
   . ~/.shell_conf_synced/env
@@ -43,6 +43,12 @@ if command -v pyenv 1>/dev/null 2>&1; then
   eval "$(pyenv init -)"
 fi
 
+#############################################
+# rbenv + Ruby support
+#############################################
+if command -v rbenv 1>/dev/null 2>&1; then
+  eval "$(rbenv init - zsh)"
+fi
 
 #############################################
 # Local Config not included in dotfiles repo
