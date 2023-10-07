@@ -7,22 +7,24 @@
     a = add
     aa = add --all
     amend = commit --amend --no-edit
+    amendedit = commit --amend
     co = checkout
     cm = commit --verbose
     cmm = commit --verbose -m
     d = diff
+    djs = diff -- . ':(exclude)package-lock.json'
+    dts = diff -- . ':!package-lock.json'
     g = grep
     l = log --pretty=format:'%Cred%h%Creset @ %Cgreen%cr%Creset: %s %C(bold)%d%Creset %C(bold blue)<%an>%Creset' --abbrev-commit
     pom = pull origin main
     sh = show --name-only
+    sm = switch main
     st = status -sb
+    staged = diff --staged
     rug = stash
     s = switch
-    fpush = push --force-with-lease
     pushf = push --force-with-lease
     pushn = !git push --set-upstream origin $(git rev-parse --abbrev-ref HEAD)
-    sm = switch main
-    n = checkout -b 
     fixup = commit --fixup
     fixup-run = rebase --interactive --autosquash
     w = worktree
@@ -35,7 +37,7 @@
 
 [commit]
 	gpgsign = true
- 
+
 [delta]
     syntax-theme = Monokai Extended
     line-numbers = true
