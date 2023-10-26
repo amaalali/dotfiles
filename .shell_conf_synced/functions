@@ -1,5 +1,5 @@
 function change_for() {
-  git grep --name-only --null $1 | xargs -0 sed -i '' s/$1/$2/g 
+  git grep --name-only --null $1 | xargs -0 sed -i '' s/$1/$2/g
 }
 
 function has_conflicts () {
@@ -12,4 +12,16 @@ function has_conflicts () {
 
 function gitignoreScala () {
   curl https://gist.githubusercontent.com/amaalali/3e70eb1d0ede50f52ecd5db00732e038/raw > .gitignore
+}
+
+function moveDownloadedFileHere() {
+  TARGET_FOLDER=$PWD
+  FROM_FOLDER="$HOME/Downloads"
+
+  FILE_TO_MOVE_NAME="$(ls -1 $FROM_FOLDER | fzf)"
+  FILE_TO_MOVE_PATH="$FROM_FOLDER/$FILE_TO_MOVE_NAME"
+
+  mv $FILE_TO_MOVE_PATH $TARGET_FOLDER
+
+  echo "Moved file $FILE_TO_MOVE_PATH to $TARGET_FOLDER/$FILE_TO_MOVE_NAME"
 }
