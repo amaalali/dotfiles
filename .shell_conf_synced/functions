@@ -1,8 +1,8 @@
-function change_for() {
+change_for () {
   git grep --name-only --null $1 | xargs -0 sed -i '' s/$1/$2/g
 }
 
-function has_conflicts () {
+has_conflicts () {
 
   args='(<<<<<<<|=======|>>>>>>>)'
 
@@ -10,11 +10,11 @@ function has_conflicts () {
 
 }
 
-function gitignoreScala () {
+gitignoreScala () {
   curl https://gist.githubusercontent.com/amaalali/3e70eb1d0ede50f52ecd5db00732e038/raw > .gitignore
 }
 
-function moveDownloadedFileHere() {
+moveDownloadedFileHere () {
   TARGET_FOLDER=$PWD
   FROM_FOLDER="$HOME/Downloads"
 
