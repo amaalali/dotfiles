@@ -1,7 +1,3 @@
-# Ruby Dev
-alias b="bundle --jobs 4"
-alias be="bundle exec"
-
 # Git
 alias g="git"
 alias gsco="stash_and_checkout"
@@ -10,18 +6,20 @@ alias gg="git grep"
 
 # System
 alias cc="clear"
-alias lsl="ls -l"
-alias lsa="ls -al"
-alias lsf="ls -al | fzf"
 
-alias ll="ls -l"
-alias all="ls -al"
-alias llf="ls -al | fzf"
+# List Directory Contents shortcuts
+alias ll="echo 'Invalid command. Try ls, lsl/lslf, lss/lssf, '"
+
+alias lsl="ls -al"
+alias lslf="ls -1al | fzf"
+
+alias lss="ls -1"
+alias lssf="ls -1a | fzf"
 
 # Directory Navigation
 alias ..="cd .."
 alias ...="cd ../.."
-alias dotfiles="cd $MY_DOTFILES_DIR"
+alias dotfiles='cd $MY_DOTFILES_DIR'
 
 # For cli programs
 alias scli="scala-cli"

@@ -1,6 +1,6 @@
 [core]
-  	hooksPath = ~/.githooks
-  	excludesfile = ~/.gitignore
+    hooksPath = ~/.githooks
+    excludesfile = ~/.gitignore
     pager = delta
 
 [alias]
@@ -8,15 +8,15 @@
     aa = add --all
     amend = commit --amend --no-edit
     amendedit = commit --amend
-    co = checkout
     cm = commit --verbose
     cmm = commit --verbose -m
+    co = checkout
+    cp = cherry-pick
     d = diff
     djs = diff -- . ':(exclude)package-lock.json'
     dts = diff -- . ':!package-lock.json'
     g = grep
     l = log --pretty=format:'%Cred%h%Creset @ %Cgreen%cr%Creset: %s %C(bold)%d%Creset %C(bold blue)<%an>%Creset' --abbrev-commit
-    pom = pull origin main
     sh = show --name-only
     sm = switch main
     st = status -sb

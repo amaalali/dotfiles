@@ -4,7 +4,7 @@
 eval "$(starship init zsh)"
 
 #############################################
-# Config accoss systems
+# Synced Config that applies accoss systems
 #############################################
 # my bash functions
 if [ -f ~/.shell_conf_synced/functions ]; then
@@ -16,10 +16,19 @@ if [ -f ~/.shell_conf_synced/aliases ]; then
   . ~/.shell_conf_synced/aliases
 fi
 
-# my environement variables
-if [ -f ~/.shell_conf_synced/env ]; then
-  . ~/.shell_conf_synced/env
+#############################################
+# Local Config
+#############################################
+# my bash functions
+if [ -f ~/.shell_conf_local/functions ]; then
+  . ~/.shell_conf_local/functions
 fi
+
+# my aliases
+if [ -f ~/.shell_conf_local/aliases ]; then
+  . ~/.shell_conf_local/aliases
+fi
+
 
 #############################################
 # Set the GPG_TTY and start gpg-agent
@@ -56,11 +65,6 @@ fi
 if [ -f ~/.shell_conf_local/index ]; then
   # This file should link to any other bash config files
   . ~/.shell_conf_local/index
-fi
-
-if [ -f ~/.shell_conf_local/env ]; then
-  # This file should link to any other bash config files
-  . ~/.shell_conf_local/env
 fi
 
 #############################################
