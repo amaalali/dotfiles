@@ -98,10 +98,8 @@ For example, if the `.shell_conf` file is removed the `.zshrc` should still load
 
 ### Todo
 
-- [ ] Make vimrc modular
 - [ ] Make linking configs to local config files a script
 - [ ] Make unlinking configs to local config files a script
-- [ ] Make script to add folder specific gitconfigs
 
 # Additional Apps and Utilities
 
