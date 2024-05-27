@@ -4,10 +4,8 @@
 1. Clone this repo to location ~/code/dotfiles
 1. Install essential dependencies:
     1. [homebrew](https://brew.sh/)
-    2. git - [see git setup instructions](#setup-git-config)
-    3. stow - `brew install stow`
-2. Install stow
-3. Install delta
+    2. Install all packages with `brew bundle`. Check the [section below for install details](#install-packages-with-brew-bundle).
+2. Configure git, [see git setup instructions](#setup-git-config)
 4. Link files using [the install command](#install-command-to-link-dotfiles)
 5. Install current font - [see font install instructions and setup guide](#setup-fonts)
 6. Install [Starship shell prompt](https://starship.rs/)
@@ -17,6 +15,15 @@
     3. [SDKMan](https://sdkman.io)
 8. Install [Scala-CLI](https://scala-cli.virtuslab.org/)
     1. See [installation section](#setup-scala-cli)
+9. Run Brew
+
+###  Install packages with `brew bundle`
+1. In command line ensure that the working directory is the base of this project
+1. Run command
+
+```
+brew bundle install --file=./Brewfile
+```
 
 ### Install Command to link dotfiles
 1. In command line ensure that the working directory is the base of this project
@@ -28,8 +35,7 @@ stow -t ~ -v .
 
 ### Setup Git Config
 1. Install git: `brew install git`
-1. Generate GPG signing keys for an email
-1. Create a local `.gitconfig` file and add the username, email, and the GPG Signing key.
+1. Create a local `.gitconfig` file and add the username, email, and ... ssh for signing
 1. Configure git by adding the following line to the `.gitconfig`
   ```
   [include]

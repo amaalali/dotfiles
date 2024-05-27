@@ -1,4 +1,16 @@
-# Special files 
+# IDE files
+.metals
+.vscode
+.bsp
+
+# Temp files
+.swp
+
+# Dotfile repo instructions and license
+^/README.*
+^/LICENSE.*
+
+# Special files
 setup.sh
 
 # Files specified as private
@@ -8,9 +20,9 @@ setup.sh
 \.git
 \.gitignore
 
-# Dotfile repo instructions and license
-^/README.*
-^/LICENSE.*
+# Files no longer being used
+.vimrc
 
-# Temp files
-.swp
+# Ignore Brewfile since we'll run that from here
+Brewfile
+Brewfile.lock.json
