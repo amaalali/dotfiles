@@ -15,6 +15,7 @@ setup.sh
 
 # Files specified as private
 ^/*_private*
+TODO.md
 
 # Git
 \.git
