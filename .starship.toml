@@ -1,4 +1,4 @@
-# "$schema" = 'https://starship.rs/config-schema.json' 
+# "$schema" = 'https://starship.rs/config-schema.json'
 
 [username]
 style_user = "purple bold"
@@ -30,8 +30,8 @@ format = "in dir { [$path]($style)[$read_only]($read_only_style) } "
 disabled = false
 
 [character]                            # The name of the module we are configuring is "character"
-success_symbol = '[❯](bold blue)'     # The "success_symbol" segment is being set to "➜" with the color "bold green'
-error_symbol = '[-❯](bold red)'
+success_symbol = '[ ❯](bold blue)'     # The "success_symbol" segment is being set to "➜" with the color "bold green'
+error_symbol = '[- ❯](bold red)'
 vicmd_symbol = "[❯](bold white)"
 
 [cmd_duration]
@@ -43,61 +43,137 @@ format = "{ took $duration }"
 
 # Language config
 [aws]
-symbol = "  "
+symbol = " "
+format = 'on [$symbol($profile )(\($region\) )(\[$duration\] )]($style)'
 
-[c]
-symbol = " "
+[bun]
+format = "via [$symbol]($style)"
+
+[buf]
+format = "via [$symbol]($style)"
+
+[cmake]
+format = "via [$symbol]($style)"
+
+[cobol]
+format = "via [$symbol]($style)"
+
+[crystal]
+format = "via [$symbol]($style)"
+
+[daml]
+format = "via [$symbol]($style)"
 
 [dart]
-symbol = " "
+format = "via [$symbol]($style)"
 
-[docker_context]
-symbol = " "
+[deno]
+format = "via [$symbol]($style)"
+
+[dotnet]
+format = "[$symbol(🎯 $tfm )]($style)"
 
 [elixir]
-symbol = " "
+format = 'via [$symbol]($style)'
 
 [elm]
-symbol = " "
+format = 'via [$symbol]($style)'
 
-[git_branch]
-symbol = " "
+[erlang]
+format = 'via [$symbol]($style)'
+
+[fennel]
+format = 'via [$symbol]($style)'
+
+[gleam]
+format = 'via [$symbol]($style)'
 
 [golang]
-symbol = " "
+format = 'via [$symbol]($style)'
 
-[haskell]
-symbol = " "
+[gradle]
+format = 'via [$symbol]($style)'
 
-[hg_branch]
-symbol = " "
+[haxe]
+format = 'via [$symbol]($style)'
+
+[helm]
+format = 'via [$symbol]($style)'
 
 [java]
-symbol = " "
+format = 'via [$symbol]($style)'
+
+[julia]
+format = 'via [$symbol]($style)'
+
+[kotlin]
+format = 'via [$symbol]($style)'
 
 [lua]
-symbol = " "
+format = 'via [$symbol]($style)'
 
-[memory_usage]
-symbol = " "
+[meson]
+format = 'via [$symbol]($style)'
 
-[nix_shell]
-symbol = " "
+[nim]
+format = 'via [$symbol]($style)'
 
 [nodejs]
-symbol = " "
+format = 'via [$symbol]($style)'
 
-[package]
-symbol = " "
+[ocaml]
+format = 'via [$symbol(\($switch_indicator$switch_name\) )]($style)'
+
+[opa]
+format = 'via [$symbol]($style)'
+
+[perl]
+format = 'via [$symbol]($style)'
+
+[php]
+format = 'via [$symbol]($style)'
+
+[pulumi]
+format = 'via [$symbol$stack]($style)'
+
+[purescript]
+format = 'via [$symbol]($style)'
 
 [python]
-symbol = " "
+# format = 'via [$symbol]($style)'
+
+[quarto]
+format = 'via [$symbol]($style)'
+
+[raku]
+format = 'via [$symbol]($style)'
+
+[red]
+format = 'via [$symbol]($style)'
+
+[rlang]
+format = 'via [$symbol]($style)'
 
 [ruby]
-symbol = " "
+format = 'via [$symbol]($style)'
 
 [rust]
-symbol = " "
+format = 'via [$symbol]($style)'
 
-[scala]
-symbol = " "
+[solidity]
+format = 'via [$symbol]($style)'
+
+[typst]
+format = 'via [$symbol]($style)'
+
+[swift]
+format = 'via [$symbol]($style)'
+
+[vagrant]
+format = 'via [$symbol]($style)'
+
+[vlang]
+format = 'via [$symbol]($style)'
+
+[zig]
+format = 'via [$symbol]($style)'
