@@ -35,6 +35,8 @@
     # Location of dotfiles
     export MY_DOTFILES_DIR=$HOME/code/dotfiles
 
+    export SSH_AUTH_SOCK=~/Library/Group\ Containers/2BUA8C4S2C.com.1password/t/agent.sock
+
 # </Environment variables>
 
 # <User Binaries>
