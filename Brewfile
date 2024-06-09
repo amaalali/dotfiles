@@ -22,3 +22,6 @@ brew "oven-sh/bun/bun"
 
 tap "jesseduffield/lazydocker"
 brew "jesseduffield/lazydocker/lazydocker"
+
+tap "jesseduffield/lazygit"
+brew "jesseduffield/lazygit/lazygit"
