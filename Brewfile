@@ -15,6 +15,7 @@ brew "tmux"
 brew "zoxide"
 cask "1password-cli"
 cask "font-jetbrains-mono-nerd-font"
+cask "alacritty"
 cask "kitty"
 cask "visual-studio-code"
 

@@ -30,8 +30,10 @@ brew bundle install --file=./Brewfile
 1. In command line ensure that the working directory is the base of this project
 1. Run command
 
+Ensure there is a `.config` folder
 ```
-stow -t ~ -v .
+stow -t ~ -v home
+stow -t ~/.config -v config
 ```
 
 ### Setup Git Config
@@ -86,7 +88,8 @@ See [Nerd Fonts](https://www.nerdfonts.com) for more options.
 2. Uninstall command:
 
 ```
-stow -t ~ -v -D .
+stow -t ~ -v -D home
+stow -t ~/.config -v -D config
 ```
 
 # Folder structure
