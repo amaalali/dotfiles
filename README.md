@@ -4,18 +4,19 @@
 1. Clone this repo to location ~/code/dotfiles
 1. Install essential dependencies:
     1. [homebrew](https://brew.sh/)
-    2. Install all packages with `brew bundle`. Check the [section below for install details](#install-packages-with-brew-bundle).
-2. Configure git, [see git setup instructions](#setup-git-config)
-4. Link files using [the install command](#install-command-to-link-dotfiles)
-5. Install current font - [see font install instructions and setup guide](#setup-fonts)
-6. Install [Starship shell prompt](https://starship.rs/)
-7. Install common tools:
+    1. Install all packages with `brew bundle`. Check the [section below for install details](#install-packages-with-brew-bundle).
+1. Configure git, [see git setup instructions](#setup-git-config)
+1. Link files using [the install command](#install-command-to-link-dotfiles)
+1. Install current font - [see font install instructions and setup guide](#setup-fonts)
+1. Install [Starship shell prompt](https://starship.rs/)
+1. Install [tpm - Tmux Plugin Manager](https://github.com/tmux-plugins/tpm)
+1. Install common tools:
     1. fzf - `brew install fzf`
-    2. [delta](https://github.com/dandavison/delta) - better git diff
-    3. [SDKMan](https://sdkman.io)
-8. Install [Scala-CLI](https://scala-cli.virtuslab.org/)
+    1. [delta](https://github.com/dandavison/delta) - better git diff
+    1. [SDKMan](https://sdkman.io)
+1. Install [Scala-CLI](https://scala-cli.virtuslab.org/)
     1. See [installation section](#setup-scala-cli)
-9. Run Brew
+1. Run Brew
 
 ###  Install packages with `brew bundle`
 1. In command line ensure that the working directory is the base of this project
@@ -39,7 +40,7 @@ stow -t ~ -v .
 1. Configure git by adding the following line to the `.gitconfig`
   ```
   [include]
-    path = .gitconfig_extension
+    path = ~/.gitconfig_extension
   ```
 5. For folder specific / project specific git config, create a different config file `.gitconfig_${folder_name}` and link to that for that folder in `.gitconfig`. For example to use a different user details for signing commits in folder `~/code/foo` then add the following
 
@@ -59,14 +60,14 @@ stow -t ~ -v .
 ```
 
 ### Setup ZSH config
-1. Add the following line to the `.zshrc
+1. Add the following line to the `.zshrc`
 
 ```
 . ~/.zshrc_extension
 ```
 
 ### Setup fonts
-1. Install font: `brew install --cask font-fira-code-nerd-font`
+1. Install font: `brew install --cask ???`
 2. Change font for **each profile** to use installed font
 3. Configure font in VSCode
     1. Change font familty: `"editor.fontFamily": "'FiraCode Nerd Font Mono', Menlo, Monaco, 'Courier New', monospace"`

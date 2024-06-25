@@ -9,13 +9,16 @@
 # Dotfile repo instructions and license
 ^/README.*
 ^/LICENSE.*
+TODO.md
 
 # Special files
 setup.sh
 
 # Files specified as private
-^/*_private*
 TODO.md
+^/*_private*
+^_private*
+^IGNORE*
 
 # Git
 \.git
@@ -23,7 +26,3 @@ TODO.md
 
 # Files no longer being used
 .vimrc
-
-# Ignore Brewfile since we'll run that from here
-Brewfile
-Brewfile.lock.json

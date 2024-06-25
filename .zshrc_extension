@@ -1,9 +1,4 @@
 #############################################
-# Start starship
-#############################################
-eval "$(starship init zsh)"
-
-#############################################
 # Synced Config that applies accoss systems
 #############################################
 # my bash functions
@@ -28,22 +23,6 @@ fi
 if [ -f ~/.shell_conf_local/aliases ]; then
   . ~/.shell_conf_local/aliases
 fi
-
-
-#############################################
-# Set the GPG_TTY and start gpg-agent
-#############################################
-GPG_TTY=$(tty)
-export  GPG_TTY
-gpgconf --launch gpg-agent
-
-#############################################
-# oh-my-zsh
-#############################################
-# Going to try switching to fish shell
-# if [ -f ~/.shell_conf_synced/oh-my-zsh ]; then
-#   . ~/.shell_conf_synced/oh-my-zsh
-# fi
 
 #############################################
 # pyenv + Python support
@@ -75,6 +54,9 @@ autoload -U compinit
 fpath=($HOME/.bloop/zsh $fpath)
 compinit
 
+#############################################
+# fzf
+#############################################
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
 #############################################
@@ -89,6 +71,16 @@ compinit
 #############################################
 eval "$(fnm env --use-on-cd --version-file-strategy=recursive --corepack-enabled --resolve-engines)"
 
+#############################################
+# starship init
+#############################################
+eval "$(starship init zsh)"
+
+#############################################
+# zoxide init
+# https://github.com/ajeetdsouza/zoxide
+#############################################
+eval "$(zoxide init zsh)"
 
 #############################################
 # Print custom shell welcome message
