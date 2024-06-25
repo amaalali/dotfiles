@@ -1,6 +1,7 @@
 tap "homebrew/bundle"
 brew "ack"
 brew "bat"
+brew "fnm"
 brew "fzf"
 brew "gh"
 brew "git"
