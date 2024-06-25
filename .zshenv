@@ -30,10 +30,8 @@
     # Startship config path https://starship.rs/config
     export STARSHIP_CONFIG=~/.starship.toml
 
-    export PYENV_ROOT=$HOME/.pyenv
-
     # Location of dotfiles
-    export MY_DOTFILES_DIR=$HOME/code/dotfiles
+    export MY_DOTFILES_DIR=$HOME/Developer/dotfiles
 
     export SSH_AUTH_SOCK=~/Library/Group\ Containers/2BUA8C4S2C.com.1password/t/agent.sock
 
@@ -51,19 +49,9 @@
         export PATH=$PATH:./node_modules/.bin
     fi
 
-    # Python
-    if [ -d ~/Library/Python/3.8/bin ]; then
-        export PATH=$PATH:~/Library/Python/3.8/bin
-    fi
-
     # Rust + cargo support
     if [ -f $HOME/.cargo ]; then
         export PATH="$HOME/.cargo/bin:$PATH"
-    fi
-
-    # IntelliJ
-    if [ -f $HOME/.idea_scripts ]; then
-        export PATH="$PATH:$HOME/.idea_scripts/"
     fi
 
     # Homebrew's sbin
@@ -74,8 +62,5 @@
 
     # Add Java bin directory to PATH
     [ -d $JAVA_HOME/bin ] && export PATH="$JAVA_HOME/bin:$PATH"
-
-    # Add the Jetbrains Toolbox Apps to path
-    [ -d "$HOME/Library/Application Support/JetBrains" ] && export PATH="$PATH:$HOME/Library/Application Support/JetBrains/Toolbox/scripts"
 
 # </Additional Installed Binaries>
