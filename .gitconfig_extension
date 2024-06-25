@@ -24,7 +24,6 @@
     rug = stash
     s = switch
     pushf = push --force-with-lease
-    pushn = !git push --set-upstream origin $(git rev-parse --abbrev-ref HEAD)
     fixup = commit --fixup
     fixup-run = rebase --interactive --autosquash
     w = worktree
@@ -34,6 +33,7 @@
 
 [push]
     default = simple
+    autoSetupRemote = true
 
 [commit]
 	gpgsign = true
