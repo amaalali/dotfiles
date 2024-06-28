@@ -27,9 +27,6 @@
     # nvm ? node version manager
     export NVM_DIR="$HOME/.nvm"
 
-    # Startship config path https://starship.rs/config
-    export STARSHIP_CONFIG=~/.starship.toml
-
     # Location of dotfiles
     export MY_DOTFILES_DIR=$HOME/Developer/dotfiles
 
