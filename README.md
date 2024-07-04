@@ -1,4 +1,4 @@
-# Installing and Deleting
+# Installing and Deleting FOO
 
 ## Setup steps
 1. Clone this repo to location ~/code/dotfiles
