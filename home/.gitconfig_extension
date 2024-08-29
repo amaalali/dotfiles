@@ -3,6 +3,9 @@
     excludesfile = ~/.gitignore
     pager = delta
 
+[init]
+  defaultBranch = main
+
 [alias]
     a = add
     aa = add --all
