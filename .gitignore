@@ -6,3 +6,4 @@
 *.vscode/
 *Brewfile.lock.json
 WIP*
+.luarc.json
