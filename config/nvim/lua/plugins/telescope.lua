@@ -44,8 +44,13 @@ return { -- Fuzzy Finder (files, lsp, etc)
       --
       defaults = {
         file_ignore_patterns = EXCLUDED_FILES_AND_FOLDERS,
+        hidden = true,
       },
-      -- pickers = {}
+      pickers = {
+        find_files = {
+          hidden = true,
+        },
+      },
       extensions = {
         ['ui-select'] = {
           require('telescope.themes').get_dropdown(),
