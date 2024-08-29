@@ -31,8 +31,8 @@ disabled = false
 
 [character]                            # The name of the module we are configuring is "character"
 success_symbol = '[ ❯](bold blue)'     # The "success_symbol" segment is being set to "➜" with the color "bold green'
-error_symbol = '[- ❯](bold red)'
-vicmd_symbol = "[❯](bold white)"
+error_symbol   = '[ ❯](bold red)'
+vicmd_symbol   = "[ ❯](bold white)"
 
 [cmd_duration]
 min_time = 4
