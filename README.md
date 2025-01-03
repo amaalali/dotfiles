@@ -10,8 +10,8 @@ Install essential dependencies:
 
 ### Get config
 
-- [ ] Clone this repo to location ~/Developer/dotfiles
-- [ ] Link files by running script `./link.sh`
+1. Clone this repo to location ~/Developer/dotfiles
+2. Link files by running script `./link.sh`
 
 ### Install packages with Homebrew
 Install apps, packages, tools with homebrew
