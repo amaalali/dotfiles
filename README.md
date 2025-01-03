@@ -10,8 +10,8 @@ Install essential dependencies:
 
 ### Get config
 
-1. Clone this repo to location ~/Developer/dotfiles
-2. Link files by running script `./link.sh`
+- [ ] Clone this repo to location ~/Developer/dotfiles
+- [ ] Link files by running script `./link.sh`
 
 ### Install packages with Homebrew
 Install apps, packages, tools with homebrew
@@ -26,12 +26,9 @@ cd ~ && brew bundle install --file=~/Brewfile
 1. Configure git, [see git setup instructions](#setup-git-config)
 2. Setup [ZSH config](#setup-zsh-config)
 
-
-
 ### Manual installation
-8. Install [Starship shell prompt](https://starship.rs/)
-10. Install [tpm - Tmux Plugin Manager](https://github.com/tmux-plugins/tpm)
-11. Maybe?: Install current font - [see font install instructions and setup guide](#setup-fonts)
+1. Install [tpm - Tmux Plugin Manager](https://github.com/tmux-plugins/tpm)
+2. Maybe?: Install current font - [see font install instructions and setup guide](#setup-fonts)
 
 ### Setup dev environments
 
