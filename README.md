@@ -34,9 +34,10 @@ cd ~ && brew bundle install --file=~/Brewfile
 
 #### Java and Scala
 1. Install [SDKMan](https://sdkman.io)
-2. Install appropriate JVM version
-3. Scala
-4. Scala-CLI
+2. Install appropriate JVM version - via sdk
+3. Scala - via sdk
+4. SBT - via sdk
+5. Scala-CLI - via sdk
     1. Install [Scala-CLI](https://scala-cli.virtuslab.org/).
     2. Configure [shell completions](https://scala-cli.virtuslab.org/install#shell-completions)
 
@@ -48,21 +49,30 @@ cd ~ && brew bundle install --file=~/Brewfile
   [include]
     path = ~/.gitconfig_extension
   ```
-3. For folder specific / project specific git config, create a different config file `.gitconfig_${folder_name}` and link to that for that folder in `.gitconfig`. For example to use a different user details for signing commits in folder `~/code/foo` then add the following
+3. Add basic config to `~/.gitconfig`
+```
+[user]
+	name = <name>
+	email = <email>
+[commit].
+	gpgsign = true
+[gpg]
+	format = ssh
+```
+5. For folder specific / project specific git config, create a different config file `.gitconfig_${folder_name}` and link to that for that folder in `.gitconfig`. For example to use a different user details for signing commits in folder `~/code/foo` then add the following
 
 ```
-// .gitconfig
+// ~/.gitconfig
 [includeIf "gitdir:code/foo/"]
   path = .gitconfig_foo
 ```
 
 ```
-// .gitconfig_foo
+// ~/.gitconfig_foo
 [user]
   name = <Name>
   email = <Email>
   signingKey = <SigningKey>
-
 ```
 
 ### Setup ZSH config
@@ -93,20 +103,11 @@ stow -t ~/.config -v -D config
 ```
 
 # Folder structure
+
+The aim is to:
+- make the configs resiliant to breakage. For example, by having the `.gitconfig_extension` file referenced from the `.gitconfig`, if the `.gitconfig_extension` is removed, the core parts of the `.gitconfig` will still be able to run, just without the customisations in the `.gitconfig_extension`
+- allow other tools that automattically add to dotfiles to do so without requiring that to synced everywhere. For example oh-my-zsh creates a `.zshrc` when installed which wipes the exisiting `.zshrc`. By splitting this means that the stuff that oh-my-zsh adds doesn't clutter the config I care about backing up. 
+
 The main folders are
 - `home` which is symlinked to the home folder (`~`)
 - `config` which is symlinked to `.config` folder in the home folder (`~/.config`)
-
-
-
-The aim is to make the configs resiliant to breakage
-For example, if the `.gitconfig_extension` file is removed the `.gitconfig` should still load.
-
-## Note
-
-- Instead of `.zshrc` I have a `.zshrc_extension`. This is so that the .zshrc that oh-my-zsh creates can source the `.zshrc_extension`
-
-
-# Additional Apps and Utilities
-
-- https://github.com/arialdomartini/oh-my-git#install-the-font
