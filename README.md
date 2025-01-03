@@ -2,15 +2,17 @@
 
 ## Setup steps
 1. Clone this repo to location ~/code/dotfiles
-1. Install essential dependencies:
+2. Install essential dependencies:
     1. [homebrew](https://brew.sh/)
-    1. Install all packages with `brew bundle`. Check the [section below for install details](#install-packages-with-brew-bundle).
-1. Configure git, [see git setup instructions](#setup-git-config)
-1. Link files using [the install command](#install-command-to-link-dotfiles)
-1. Install current font - [see font install instructions and setup guide](#setup-fonts)
-1. Install [Starship shell prompt](https://starship.rs/)
-1. Install [tpm - Tmux Plugin Manager](https://github.com/tmux-plugins/tpm)
-1. Install common tools:
+    2. git - with homebrew
+    3. stow - with homebrew
+3. Link files using [the install command](#install-command-to-link-dotfiles)
+4. From home directory, install all packages with `brew bundle` using the `Brewfile` with all required apps. Check the [section below for install details](#install-packages-with-brew-bundle).
+5. Configure git, [see git setup instructions](#setup-git-config)
+6. Install current font - [see font install instructions and setup guide](#setup-fonts)
+7. Install [Starship shell prompt](https://starship.rs/)
+8. Install [tpm - Tmux Plugin Manager](https://github.com/tmux-plugins/tpm)
+9. Install common tools:
     1. fzf - `brew install fzf`
     1. [delta](https://github.com/dandavison/delta) - better git diff
     1. [SDKMan](https://sdkman.io)
@@ -23,21 +25,15 @@
 1. Run command
 
 ```
-brew bundle install --file=./Brewfile
+cd ~ && brew bundle install --file=~/Brewfile
 ```
 
 ### Install Command to link dotfiles
-1. In command line ensure that the working directory is the base of this project
-1. Run command
-
-Ensure there is a `.config` folder
-```
-stow -t ~ -v home
-stow -t ~/.config -v config
-```
+1. Install stow
+2. Run script `./link.sh`
 
 ### Setup Git Config
-1. Install git: `brew install git`
+1. ~Install git: `brew install git`~ This is installed with [the install command](#install-command-to-link-dotfiles)
 1. Create a local `.gitconfig` file and add the username, email, and ... ssh for signing
 1. Configure git by adding the following line to the `.gitconfig`
   ```
