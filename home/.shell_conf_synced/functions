@@ -25,3 +25,7 @@ moveDownloadedFileHere () {
 
   echo "Moved file $FILE_TO_MOVE_PATH to $TARGET_FOLDER/$FILE_TO_MOVE_NAME"
 }
+
+brewfileInstall() {
+	brew bundle install --file="~/Brewfile"
+}
