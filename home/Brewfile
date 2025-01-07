@@ -1,6 +1,9 @@
 tap "homebrew/bundle"
 brew "ack"
 brew "bat"
+brew "docker"
+brew "colima"
+brew "fd"
 brew "fnm"
 brew "fzf"
 brew "gh"
@@ -13,17 +16,21 @@ brew "stow"
 brew "tig"
 brew "tmux"
 brew "zoxide"
-cask "1password-cli"
-cask "font-jetbrains-mono-nerd-font"
-cask "alacritty"
-cask "kitty"
-cask "visual-studio-code"
 
-tap "oven-sh/bun"
-brew "oven-sh/bun/bun"
+cask "1password-cli"
+cask "firefox@developer-edition"
+cask "ghostty"
+cask "hiddenbar"
+cask "font-jetbrains-mono-nerd-font"
+cask "visual-studio-code"
 
 tap "jesseduffield/lazydocker"
 brew "jesseduffield/lazydocker/lazydocker"
 
 tap "jesseduffield/lazygit"
 brew "jesseduffield/lazygit/lazygit"
+
+
+tap "coursier/formulas"
+brew "coursier/formulas/coursier"
+
