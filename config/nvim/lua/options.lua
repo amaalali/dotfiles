@@ -55,6 +55,6 @@ vim.opt.cursorline = true
 vim.opt.scrolloff = 10
 
 vim.cmd 'set autoindent'
-vim.cmd 'set noexpandtab'
-vim.cmd 'set tabstop=4'
-vim.cmd 'set shiftwidth=4'
+vim.cmd 'set expandtab'
+vim.cmd 'set tabstop=2'
+vim.cmd 'set shiftwidth=2'
