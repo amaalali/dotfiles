@@ -1,6 +1,6 @@
 require('lazy').setup {
 
-  require 'plugins/conform',
+  -- require 'plugins/conform',
   require 'plugins/gitsigns',
   require 'plugins/indent-blankline',
   require 'plugins/mini',
