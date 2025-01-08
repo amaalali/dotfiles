@@ -7,6 +7,7 @@ local EXCLUDED_FILES_AND_FOLDERS = {
 
   -- Tooling generated
   '^node_modules/',
+  '^.scala-build/',
 
   -- IDE generated
   '^.bloop/',

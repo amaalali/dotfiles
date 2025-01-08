@@ -8,7 +8,7 @@ local TreesitterLangs = {
   'lua',
   'markdown',
   'python',
-  'python3',
+  -- 'python3',
   'typescript',
   'vim',
   'vimdoc',
