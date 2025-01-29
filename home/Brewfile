@@ -15,13 +15,15 @@ brew "starship"
 brew "stow"
 brew "tig"
 brew "tmux"
+brew "tmux-sessionizer"
 brew "zoxide"
 
 cask "1password-cli"
+cask "bruno"
 cask "firefox@developer-edition"
+cask "font-jetbrains-mono-nerd-font"
 cask "ghostty"
 cask "hiddenbar"
-cask "font-jetbrains-mono-nerd-font"
 cask "visual-studio-code"
 
 tap "jesseduffield/lazydocker"
@@ -29,7 +31,6 @@ brew "jesseduffield/lazydocker/lazydocker"
 
 tap "jesseduffield/lazygit"
 brew "jesseduffield/lazygit/lazygit"
-
 
 tap "coursier/formulas"
 brew "coursier/formulas/coursier"
