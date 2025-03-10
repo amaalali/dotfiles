@@ -17,6 +17,7 @@
     co = checkout
     cp = cherry-pick
     d = diff
+    ds = diff --staged
     djs = diff -- . ':(exclude)package-lock.json'
     dts = diff -- . ':!package-lock.json'
     g = grep
