@@ -72,7 +72,7 @@ compinit
 # Node version manager: FNM
 # https://github.com/Schniz/fnm
 #############################################
-eval "$(fnm env --use-on-cd --version-file-strategy=recursive --corepack-enabled --resolve-engines)"
+eval "$(fnm env --use-on-cd --shell zsh --version-file-strategy=recursive --resolve-engines)"
 
 #############################################
 # starship init
