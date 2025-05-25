@@ -1,4 +1,21 @@
-local EXCLUDED_FILES_AND_FOLDERS = require 'plugins/const_excluded_files_and_folders'
+local EXCLUDED_FILES_AND_FOLDERS = {
+  -- OS generated
+  '.DS_Store',
+
+  -- Tooling
+  '^.git/',
+
+  -- Tooling generated
+  '^node_modules/',
+  '^.scala-build/',
+
+  -- IDE generated
+  '^.bloop/',
+  '^.bsp/',
+  '^.metals/',
+  '^.idea/',
+  '^.vscode/',
+}
 
 local function isExcluded(name, bufnr)
   for _, pattern in ipairs(EXCLUDED_FILES_AND_FOLDERS) do
