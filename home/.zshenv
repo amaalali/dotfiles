@@ -24,9 +24,6 @@
 
     export EDITOR='vim'
 
-    # nvm ? node version manager
-    export NVM_DIR="$HOME/.nvm"
-
     # Location of dotfiles
     export MY_DOTFILES_DIR=$HOME/Developer/dotfiles
 
