@@ -22,7 +22,7 @@
 
 # <Environment variables>
 
-    export EDITOR='vim'
+    export EDITOR='nvim'
 
     # Location of dotfiles
     export MY_DOTFILES_DIR=$HOME/Developer/dotfiles
