@@ -23,6 +23,5 @@ alias dotfiles='cd $MY_DOTFILES_DIR'
 
 # For cli programs
 alias scli="scala-cli"
-
-# 
 alias pn=pnpm
+alias lgit=lazygit
