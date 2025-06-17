@@ -7,3 +7,4 @@
 *Brewfile.lock.json
 WIP*
 .luarc.json
+config/nvim/lazy-lock.json
