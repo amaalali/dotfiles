@@ -12,6 +12,7 @@
     amend = commit --amend --no-edit
     amendedit = commit --amend
     b = branch
+    cmf = commit --fixup
     cm = commit --verbose
     cmm = commit --verbose -m
     co = checkout
@@ -20,6 +21,8 @@
     ds = diff --staged
     djs = diff -- . ':(exclude)package-lock.json'
     dts = diff -- . ':!package-lock.json'
+    fixup = !echo 'Aliases for fixup workflow: \n cf        <sha> - create commit with fixup flag that references the sha provided\n fixup-run <sha> - run rebase with autosquash from commit sha. (Remember to use at lease sha~1 from earliest sha referenced as a fixup)'
+    fixup-run = rebase --interactive --autosquash
     g = grep
     l = log --pretty=format:'%Cred%h%Creset @ %Cgreen%cr%Creset: %s %C(bold)%d%Creset %C(bold blue)<%an>%Creset' --abbrev-commit
     sh = show --name-only
@@ -29,8 +32,6 @@
     rug = stash
     s = switch
     pushf = push --force-with-lease
-    fixup = commit --fixup
-    fixup-run = rebase --interactive --autosquash
     w = worktree
     yeet = push
     yeet-yolo = push --force-with-lease
