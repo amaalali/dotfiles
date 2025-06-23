@@ -1,9 +1,13 @@
-*/.DS_Store
+
+*Brewfile.lock.json
+config/nvim/lazy-lock.json
 .my_git_info
+WIP*
+
+*/.DS_Store
+
 *.scala-build
 *.bsp
 *.metals/
 *.vscode/
-*Brewfile.lock.json
-WIP*
 .luarc.json
