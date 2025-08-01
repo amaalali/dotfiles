@@ -106,7 +106,7 @@ stow -t ~/.config -v -D config
 
 The aim is to:
 - make the configs resiliant to breakage. For example, by having the `.gitconfig_extension` file referenced from the `.gitconfig`, if the `.gitconfig_extension` is removed, the core parts of the `.gitconfig` will still be able to run, just without the customisations in the `.gitconfig_extension`
-- allow other tools that automattically add to dotfiles to do so without requiring that to synced everywhere. For example oh-my-zsh creates a `.zshrc` when installed which wipes the exisiting `.zshrc`. By splitting this means that the stuff that oh-my-zsh adds doesn't clutter the config I care about backing up. 
+- allow other tools that automattically add to dotfiles to do so without requiring that to synced everywhere. For example oh-my-zsh creates a `.zshrc` when installed which wipes the exisiting `.zshrc`. By splitting this means that the stuff that oh-my-zsh adds doesn't clutter the config I care about backing up.
 
 The main folders are
 - `home` which is symlinked to the home folder (`~`)
