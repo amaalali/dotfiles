@@ -2,9 +2,12 @@ return {
   -- Main LSP Configuration
   'neovim/nvim-lspconfig',
   dependencies = {
-    -- Automatically install LSPs and related tools to stdpath for Neovim
-    { 'williamboman/mason.nvim', config = true }, -- NOTE: Must be loaded before dependants
-    'williamboman/mason-lspconfig.nvim',
+    --[[
+      Workaround for Mason change
+      https://github.com/LazyVim/LazyVim/issues/6039#issuecomment-2856227817
+    ]]--
+    { 'williamboman/mason.nvim', config = true, version = "^1.0.0" }, -- NOTE: Must be loaded before dependants
+    { 'williamboman/mason-lspconfig.nvim', version = "^1.0.0" },
     'WhoIsSethDaniel/mason-tool-installer.nvim',
 
     -- Useful status updates for LSP.
@@ -165,14 +168,6 @@ return {
       -- clangd = {},
       gopls = {},
       pyright = {},
-      groovyls = {},
-      -- rust_analyzer = {},
-      -- ... etc. See `:help lspconfig-all` for a list of all the pre-configured LSPs
-      --
-      -- Some languages (like typescript) have entire language plugins that can be useful:
-      --    https://github.com/pmizio/typescript-tools.nvim
-      --
-      -- But for many setups, the LSP (`ts_ls`) will work just fine
       ts_ls = {},
       --
 
