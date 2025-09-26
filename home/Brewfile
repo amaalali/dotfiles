@@ -17,6 +17,7 @@ brew "stow"
 brew "tig"
 brew "tmux"
 brew "tmux-sessionizer"
+brew "uv"
 brew "zoxide"
 
 cask "1password-cli"
