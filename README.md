@@ -111,3 +111,23 @@ The aim is to:
 The main folders are
 - `home` which is symlinked to the home folder (`~`)
 - `config` which is symlinked to `.config` folder in the home folder (`~/.config`)
+
+## Neovim
+### Adding a plugin
+
+1. Add a new file, eg `foo.lua` to `lua/plugins/`, ie `lua/plugins/foo.lua`
+2. In `lua/plugins/foo.lua` add the config, ensuring that there is a return value. Eg:
+
+```lua
+return {
+  `amaalali/foo.nvim`,
+  opts = {}
+}
+```
+
+3. Hook the config into lazy's setup by adding the following to the `setup` block
+
+```lua
+require 'plugins.foo'
+
+```
