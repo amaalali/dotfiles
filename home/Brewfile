@@ -1,6 +1,7 @@
 brew "ack"
 brew "bat"
 brew "docker"
+brew "delta"
 brew "colima"
 brew "fd"
 brew "fnm"
