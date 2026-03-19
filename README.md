@@ -55,59 +55,32 @@ cd ~ && brew bundle install --file=~/Brewfile
 [user]
 	name = <name>
 	email = <email>
-[commit].
-	gpgsign = true
-[gpg]
-	format = ssh
-```
-5. For folder specific / project specific git config, create a different config file `.gitconfig_${folder_name}` and link to that for that folder in `.gitconfig`. For example to use a different user details for signing commits in folder `~/code/foo` then add the following
-
-```
-// ~/.gitconfig
-[includeIf "gitdir:code/foo/"]
-  path = .gitconfig_foo
-```
-
-```
-// ~/.gitconfig_foo
-[user]
-  name = <Name>
-  email = <Email>
-  signingKey = <SigningKey>
 ```
 
 ### Setup ZSH config
 1. Add the following line to the `.zshrc`
 
 ```
-. ~/.zshrc_extension
+. ~/.config_ama_synced/.zshrc
 ```
 
 ### Setup fonts
 1. Install font: `brew install --cask ???`
 2. Change font for **each profile** to use installed font
 
-## Removal of dotfiles
-1. In command line ensure that the working directory is the base of this project
-2. Uninstall command:
-
-```
-stow -t ~ -v -D home
-stow -t ~/.config -v -D config
-```
-
 ### Setup local config
-- create `~/.shell_conf_local/tmux` add `set -g @sessionx-custom-paths 'comma, ~/separated/folders'`
+- create `~/.config_ama_local/tmux` add `set -g @sessionx-custom-paths 'comma, ~/separated/folders'`
 
 # Folder structure
 
 The aim is to:
-- make the configs resiliant to breakage. For example, by having the `.gitconfig_extension` file referenced from the `.gitconfig`, if the `.gitconfig_extension` is removed, the core parts of the `.gitconfig` will still be able to run, just without the customisations in the `.gitconfig_extension`
-- allow other tools that automattically add to dotfiles to do so without requiring that to synced everywhere. For example oh-my-zsh creates a `.zshrc` when installed which wipes the exisiting `.zshrc`. By splitting this means that the stuff that oh-my-zsh adds doesn't clutter the config I care about backing up.
+- make the configs resilient to breakage. For example, by having the `./config_ama_synced/.gitconfig` file referenced from the `.gitconfig`, if the `./config_ama_synced/gitconfig` is removed, the core parts of the `.gitconfig` will still be able to run, just without customisations
+
+- allow other tools that automatically add to dotfiles to do so without requiring that to synced everywhere. For example __sdkman__ and __scala-cli__ add bits to the `.zshrc` when installed. By splitting files, this means that the bits added by tools aren't synced automatically.
 
 The main folders are
-- `home` which is symlinked to the home folder (`~`)
-- `config` which is symlinked to `.config` folder in the home folder (`~/.config`)
+- `home` - contents are symlinked to the home folder (`~`)
+- `config` - contents are symlinked to `~/.config` folder
 
 ## Neovim
 ### Adding a plugin

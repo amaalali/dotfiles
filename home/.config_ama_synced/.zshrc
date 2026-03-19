@@ -2,26 +2,26 @@
 # Synced Config that applies accoss systems
 #############################################
 # my bash functions
-if [ -f ~/.shell_conf_synced/functions ]; then
-  . ~/.shell_conf_synced/functions
+if [ -f ~/.config_ama_synced/functions ]; then
+  . ~/.config_ama_synced/functions
 fi
 
 # my aliases
-if [ -f ~/.shell_conf_synced/aliases ]; then
-  . ~/.shell_conf_synced/aliases
+if [ -f ~/.config_ama_synced/aliases ]; then
+  . ~/.config_ama_synced/aliases
 fi
 
 #############################################
 # Local Config
 #############################################
 # my bash functions
-if [ -f ~/.shell_conf_local/functions ]; then
-  . ~/.shell_conf_local/functions
+if [ -f ~/.config_ama_local/functions ]; then
+  . ~/.config_ama_local/functions
 fi
 
 # my aliases
-if [ -f ~/.shell_conf_local/aliases ]; then
-  . ~/.shell_conf_local/aliases
+if [ -f ~/.config_ama_local/aliases ]; then
+  . ~/.config_ama_local/aliases
 fi
 
 #############################################
@@ -44,9 +44,9 @@ fi
 #############################################
 # Local Config not included in dotfiles repo
 #############################################
-if [ -f ~/.shell_conf_local/index ]; then
+if [ -f ~/.config_ama_local/index ]; then
   # This file should link to any other bash config files
-  . ~/.shell_conf_local/index
+  . ~/.config_ama_local/index
 fi
 
 #############################################
@@ -82,4 +82,4 @@ eval "$(zoxide init zsh)"
 #############################################
 # Print custom shell welcome message
 #############################################
-echo "$(cat $HOME/.the_coding_laama.txt)"
+echo "$(cat $HOME/.config_ama_synced/.the_coding_laama.txt)"

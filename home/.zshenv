@@ -1,9 +1,9 @@
 
 # <Synced config>
     # my environement variables
-    if [ -d ~/.shell_conf_synced ]; then
-        if [ -f ~/.shell_conf_synced/env ]; then
-            . ~/.shell_conf_synced/env
+    if [ -d ~/.config_ama_synced ]; then
+        if [ -f ~/.config_ama_synced/env ]; then
+            . ~/.config_ama_synced/env
         fi
     fi
 # </Synced config>
@@ -12,9 +12,9 @@
 # <Local config>
     # not included in dotfiles repo
 
-    if [ -d ~/.shell_conf_local ]; then
-        if [ -f ~/.shell_conf_local/env ]; then
-            . ~/.shell_conf_local/env
+    if [ -d ~/.config_ama_local ]; then
+        if [ -f ~/.config_ama_local/env ]; then
+            . ~/.config_ama_local/env
         fi
     fi
 # </Local config>
