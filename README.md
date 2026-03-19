@@ -25,6 +25,7 @@ cd ~ && brew bundle install --file=~/Brewfile
 ### Configure
 1. Configure git, [see git setup instructions](#setup-git-config)
 2. Setup [ZSH config](#setup-zsh-config)
+3. Setup local shell config 
 
 ### Manual installation
 1. Install [tpm - Tmux Plugin Manager](https://github.com/tmux-plugins/tpm)
@@ -85,13 +86,6 @@ cd ~ && brew bundle install --file=~/Brewfile
 ### Setup fonts
 1. Install font: `brew install --cask ???`
 2. Change font for **each profile** to use installed font
-3. Configure font in VSCode
-    1. Change font familty: `"editor.fontFamily": "'FiraCode Nerd Font Mono', Menlo, Monaco, 'Courier New', monospace"`
-    1. Enable ligatures: `"editor.fontLigatures": true`
-
-
-See [Nerd Fonts](https://www.nerdfonts.com) for more options.
-
 
 ## Removal of dotfiles
 1. In command line ensure that the working directory is the base of this project

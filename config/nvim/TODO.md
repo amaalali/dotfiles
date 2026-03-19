@@ -1,4 +1,7 @@
-# Things to improve 
+# Things to improve
 
-- [ ] Line numbers both regular and relative
+- Standardise where all local config will be linked from eg
+  - ~/.config-local/zshrc
+  - ~/.config-local/zenv
+  - ~/.config-local/tmux.conf
 
