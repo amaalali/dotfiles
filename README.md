@@ -25,7 +25,7 @@ cd ~ && brew bundle install --file=~/Brewfile
 ### Configure
 1. Configure git, [see git setup instructions](#setup-git-config)
 2. Setup [ZSH config](#setup-zsh-config)
-3. Setup local shell config 
+3. Setup [local configs](#setup-local-config)
 
 ### Manual installation
 1. Install [tpm - Tmux Plugin Manager](https://github.com/tmux-plugins/tpm)
@@ -95,6 +95,9 @@ cd ~ && brew bundle install --file=~/Brewfile
 stow -t ~ -v -D home
 stow -t ~/.config -v -D config
 ```
+
+### Setup local config
+- create `~/.shell_conf_local/tmux` add `set -g @sessionx-custom-paths 'comma, ~/separated/folders'`
 
 # Folder structure
 
