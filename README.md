@@ -69,7 +69,7 @@ cd ~ && brew bundle install --file=~/Brewfile
 2. Change font for **each profile** to use installed font
 
 ### Setup local config
-- create `~/.config_ama_local/tmux` add `set -g @sessionx-custom-paths 'comma, ~/separated/folders'`
+- create `~/.config_ama_local/tmux.conf` add `set -g @sessionx-custom-paths "~/comma, ~/separated/folders"`
 
 # Folder structure
 
